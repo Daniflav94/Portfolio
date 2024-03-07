@@ -20,7 +20,7 @@ export function Contact() {
           ></path>
         </svg>
       </div>
-      <div className="w-screen h-[75vh] bg-midnight flex flex-col justify-center items-center relative -top-20">
+      <div className="w-screen h-[75vh] bg-midnight flex flex-col justify-center items-center relative -top-32">
         <div className=" w-9/12 flex items-center mb-20 gap-5">
           <h2 className="text-zinc-50 font-medium text-4xl tracking-wider">
             <span className="text-lilac">#</span>contatos

@@ -1,7 +1,7 @@
 import { MapPin, Mail } from "lucide-react";
 import pontilhado from "../assets/image/pontilhado-cinza.png";
 import { motion } from "framer-motion";
-import { useLocation, useNavigate } from 'react-router-dom'
+import useDetectScroll from '@smakss/react-scroll-direction';
 
 export function About() {
   return (
