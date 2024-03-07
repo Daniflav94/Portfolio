@@ -13,7 +13,7 @@ export default {
           'midnight': '#282C33',
           'pink': '#ffaeb4',
           'lilac': '#C778DD',
-          'lilacDark': '#a765ba',
+          'lilacDark': '#bc71d1',
           'gray': '#ABB2BF',
       },
       keyframes: {

@@ -19,6 +19,7 @@ import { projects } from "../utils/mocks";
 
 export function Projects() {
   const [isHover, setIsHover] = useState('');
+  const [selectedId, setSelectedId] = useState(null)
 
   return (
     <section id="projects" className="h-screen bg-zinc-600">
@@ -51,6 +52,7 @@ export function Projects() {
               className="w-96 h-60 box-border overflow-hidden relative border-b-2 border-lilac hover:scale-110 transition ease-in-out"
               onMouseEnter={() => setIsHover(key)}
               onMouseLeave={() => setIsHover('')}
+              onClick={() => setSelectedId(key)}
             >
               <img src={item.image} alt="imagem aplicação"/>
               <div className="w-96 h-60 bg-black opacity-60 absolute top-0 "></div>
@@ -79,7 +81,7 @@ export function Projects() {
                 </div>
                 
               </div>
-              {isHover === key && <button className="absolute z-[999999] -bottom-0 w-full h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium animate-upButton">Ver mais</button>}
+              {isHover === key && <button className="absolute z-[999999] -bottom-0 w-full h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium text-sm animate-upButton">Ver mais</button>}
             </div>
           ))}
         </div>
