@@ -21,6 +21,7 @@ import {
 import { motion, MotionConfig } from "framer-motion";
 import logo from "../assets/image/logo.svg";
 import frame from "../assets/image/Frame28.svg";
+import { stacksFront, stacksBack } from "../utils/mocks";
 
 export function Skills() {
   return (
@@ -49,249 +50,68 @@ export function Skills() {
           <div className="bg-lilac h-[2px] w-52 opacity-60"></div>
         </div>
         <div className="flex  w-8/12 items-center justify-between mb-10">
-            <div
-              className="border-zinc-50 border-[1px] rounded-2xl h-fit max-w-md p-10 flex justify-center flex-col items-center relative"
-            >
-              <span className="text-zinc-50 bg-midnight text-xl font-medium text-center mb-5 absolute -top-4">
-                Frontend
-              </span>
+          <div className="border-zinc-50 border-[1px] rounded-2xl h-fit max-w-md p-10 flex justify-center flex-col items-center relative">
+            <span className="text-zinc-50 bg-midnight text-xl font-medium text-center mb-5 absolute -top-4">
+              Frontend
+            </span>
 
-              <div className="flex gap-6 flex-wrap justify-evenly ">
+            <div className="flex gap-6 flex-wrap justify-evenly ">
+              {stacksFront?.map((item, key) => (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.5,
-                    delay: 0.1,
+                    delay: item.delay,
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
                   className="w-16"
+                  key={key}
                 >
-                  <HTMLIcon />
+                  {item.stack === "HTMLIcon" && <HTMLIcon />}
+                  {item.stack === "CSSIcon" && <CSSIcon />}
+                  {item.stack === "TailwindIcon" && <TailwindIcon />}
+                  {item.stack === "JSIcon" && <JSIcon />}
+                  {item.stack === "TSIcon" && <TSIcon />}
+                  {item.stack === "ReactIcon" && <ReactIcon />}
+                  {item.stack === "ReactNativeIcon" && <ReactNativeIcon />}
+                  {item.stack === "ReduxIcon" && <ReduxIcon />}
+                  {item.stack === "JestIcon" && <JestIcon />}
+                  {item.stack === "GraphQLIcon" && <GraphQLIcon />}
+                  {item.stack === "AngularIcon" && <AngularIcon />}
                 </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.15,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <CSSIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.2,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <TailwindIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.25,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <JSIcon />
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.3,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <TSIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.35,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <ReactIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.4,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <ReactNativeIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.45,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <ReduxIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <JestIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.55,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <GraphQLIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.6,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                  className="w-16"
-                >
-                  <AngularIcon />
-                </motion.div>
-              </div>
+              ))}
             </div>
+          </div>
 
-            <div className="border-zinc-50 border-[1px] rounded-2xl h-fit max-w-sm p-10 flex justify-center flex-col items-center relative">
-              <span className="text-zinc-50 bg-midnight text-xl font-medium text-center mb-5 absolute -top-4">
-                Backend
-              </span>
-
-              <div className="flex gap-8 flex-wrap justify-around items-stretch ">
+          <div className="border-zinc-50 border-[1px] rounded-2xl h-fit max-w-md p-10 flex justify-center flex-col items-center relative">
+            <span className="text-zinc-50 bg-midnight text-xl font-medium text-center mb-5 absolute -top-4">
+              Backend
+            </span>
+            <div className="flex gap-6 flex-wrap justify-evenly ">
+              {stacksBack?.map((item, key) => (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.5,
-                    delay: 0.65,
+                    delay: item.delay,
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
+                  className="w-16"
+                  key={key}
                 >
-                  <NodeIcon />
+                  {item.stack === "NodeIcon" && <NodeIcon />}
+                  {item.stack === "NestIcon" && <NestIcon />}
+                  {item.stack === "JavaIcon" && <JavaIcon />}
+                  {item.stack === "SpringIcon" && <SpringIcon />}
+                  {item.stack === "MySQLIcon" && <MySQLIcon />}
+                  {item.stack === "PostgresIcon" && <PostgresIcon />}
+                  {item.stack === "FirebaseIcon" && <FirebaseIcon />}
                 </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.7,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <NestIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.75,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <JavaIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.8,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <SpringIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.85,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <MySQLIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.9,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <PostgresIcon />
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.95,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <FirebaseIcon />
-                </motion.div>
-              </div>
+              ))}
             </div>
+          </div>
         </div>
       </div>
     </section>

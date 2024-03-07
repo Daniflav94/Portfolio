@@ -71,29 +71,33 @@ export function Contact() {
             <span className="text-gray text-sm">.danielealmeida</span>
           </motion.div>
 
-          <motion.div
+          <motion.a
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            href=" https://wa.me/5511945567816"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="rounded-full border-lilac border-[1px] p-5 w-20">
               <Phone size={40} color="#c778dd" strokeWidth={2} />
             </div>
             <span className="text-zinc-50 font-semibold text-lg">Telefone</span>
             <span className="text-gray text-sm">(11) 94556-7816</span>
-          </motion.div>
+          </motion.a>
 
-          <motion.div
+          <motion.a
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            href="mailto:danyelly_mell@hotmail.com"
           >
             <div className="rounded-full border-lilac border-[1px] p-5 w-20">
               <Mail size={40} color="#c778dd" strokeWidth={2} />
             </div>
             <span className="text-zinc-50 font-semibold text-lg">E-mail</span>
             <span className="text-gray text-sm">danyelly_mell@hotmail.com</span>
-          </motion.div>
+          </motion.a>
         </div>
       </div>
     </section>
