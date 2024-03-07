@@ -28,6 +28,7 @@ export function About() {
             duration: 0.8,
           }}
           whileInView={{ x: 0, opacity:1 }}
+          
           className="bg-midnight rounded-2xl h-fit max-w-screen-lg p-12 relative"
         >
           <motion.img

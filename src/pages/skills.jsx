@@ -65,7 +65,7 @@ export function Skills() {
                     delay: item.delay,
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
-                  className="w-16"
+                  className="w-16 hover:animate-wiggle"
                   key={key}
                 >
                   {item.stack === "HTMLIcon" && <HTMLIcon />}
@@ -98,7 +98,7 @@ export function Skills() {
                     delay: item.delay,
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
-                  className="w-16"
+                  className="w-16 hover:animate-wiggle"
                   key={key}
                 >
                   {item.stack === "NodeIcon" && <NodeIcon />}

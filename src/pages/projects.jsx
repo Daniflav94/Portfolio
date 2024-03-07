@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   AngularIcon,
   FirebaseIcon,
@@ -17,6 +18,8 @@ import {
 import { projects } from "../utils/mocks";
 
 export function Projects() {
+  const [isHover, setIsHover] = useState('');
+
   return (
     <section id="projects" className="h-screen bg-zinc-600">
       <div className="bg-midnight w-screen">
@@ -46,10 +49,12 @@ export function Projects() {
             <div
               key={key}
               className="w-96 h-60 box-border overflow-hidden relative border-b-2 border-lilac hover:scale-110 transition ease-in-out"
+              onMouseEnter={() => setIsHover(key)}
+              onMouseLeave={() => setIsHover('')}
             >
-              <img src={item.image} alt="imagem aplicação" />
-              <div className="w-96 h-60 opacity-9 bg-black opacity-50 absolute top-0 z-[99999]"></div>
-              <div className="absolute top-[40%] left-[25%] z-[99999] w-auto">
+              <img src={item.image} alt="imagem aplicação"/>
+              <div className="w-96 h-60 bg-black opacity-60 absolute top-0 "></div>
+              <div className="absolute top-0 left-0 w-96 h-60 flex flex-col justify-center items-center z-[999999]">
                 <span className=" text-zinc-50 font-medium text-2xl">
                   {item.title}
                 </span>
@@ -72,7 +77,9 @@ export function Projects() {
                     </div>
                   ))}
                 </div>
+                
               </div>
+              {isHover === key && <button className="absolute z-[999999] -bottom-0 w-full h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium animate-upButton">Ver mais</button>}
             </div>
           ))}
         </div>
