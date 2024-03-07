@@ -4,12 +4,13 @@ import pontilhado from "../assets/image/pontilhado.svg";
 import Github from "../assets/icons/Github.svg";
 import Linkedin from "../assets/icons/Linkedin.svg";
 import Whatsapp from "../assets/icons/Whatsapp.png";
+import { motion } from "framer-motion";
 
 export function Home() {
   return (
-    <section>
+    <section className="pt-10">
       <div className="fixed bottom-0 left-5 z-[99999] flex flex-col items-center gap-2">
-      <a
+        <a
           href=" https://wa.me/5511945567816"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +18,7 @@ export function Home() {
           <img src={Whatsapp} alt="whatsapp" className="hover:scale-125 w-6" />
         </a>
         <a
-          href="https://www.linkedin.com/in/daniele-flaviane-santos-almeida/"
+          href="https://www.linkedin.com/in/daniele-f-almeida/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -72,9 +73,13 @@ export function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="text-midnight bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+              className="text-midnight bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
+            >
               <span className="relative z-10">Download CV</span>
-            </button>
+            </motion.button>
           </a>
         </div>
       </div>
