@@ -22,3 +22,8 @@ html {
         border-radius: 8px;
     }
 }
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}

@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <section id="contact" className="h-screen">
+    <section id="contact" className="md:h-screen w-screen h-fit bg-midnight">
       <div className="bg-zinc-600 w-screen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          className="w-full"
+          className="w-full hidden md:flex"
         >
           <path
             fill="#282C33"
@@ -20,15 +20,15 @@ export function Contact() {
           ></path>
         </svg>
       </div>
-      <div className="w-screen h-[75vh] bg-midnight flex flex-col justify-center items-center relative -top-32">
-        <div className=" w-9/12 flex items-center mb-20 gap-5">
+      <div className="w-screen md:h-[75vh] h-fit bg-midnight flex flex-col items-center relative ">
+        <div className="md:w-9/12 flex items-center mb-20 mt-16 md:mt-0 gap-5">
           <h2 className="text-zinc-50 font-medium text-4xl tracking-wider">
             <span className="text-lilac">#</span>contatos
           </h2>
-          <div className="bg-lilac h-[2px] w-52 opacity-60"></div>
+          <div className="bg-lilac h-[2px] w-52 opacity-60 md:flex hidden"></div>
         </div>
 
-        <div className="w-9/12 flex justify-between">
+        <div className="md:w-9/12 w-screen flex md:flex-row flex-col justify-between gap-8">
           <motion.a
             href="https://www.linkedin.com/in/daniele-f-almeida/"
             target="_blank"

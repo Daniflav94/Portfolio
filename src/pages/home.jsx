@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 export function Home() {
   return (
-    <section className="pt-10">
-      <div className="fixed bottom-0 left-5 z-[99999] flex flex-col items-center gap-2">
+    <section className="pt-10 bg-midnight w-screen md:h-screen">
+      <div className="hidden fixed bottom-0 left-5 z-[99999] md:flex flex-col items-center gap-2">
         <a
           href=" https://wa.me/5511945567816"
           target="_blank"
@@ -37,12 +37,12 @@ export function Home() {
 
       <img
         src={pontilhado}
-        className="w-36 absolute -right-2 -top-8 z-[99999]"
+        className="w-36 hidden md:flex  md:absolute -right-2 -top-8 z-[9999999]"
         alt="quadrado pontilhado"
       />
       <div
         id="home"
-        className="bg-midnight inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen h-screen"
+        className="bg-midnight inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-screen"
       >
         <div className="relative">
           <img
@@ -62,7 +62,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="border-s-2  md:w-90 h-32 border-gray md:mt-52 mt-16 mx-16 px-16 flex flex-col justify-center font-sans">
+        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 mt-16 md:mx-16 mx-5 md:px-16 flex flex-col justify-center font-sans">
           <p className="text-gray text-xl mb-6">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
             Desenvolvedora Fullstack
@@ -76,7 +76,7 @@ export function Home() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.8 }}
-              className="text-midnight bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
+              className="text-midnight bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md md:w-40 w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
             >
               <span className="relative z-10">Download CV</span>
             </motion.button>

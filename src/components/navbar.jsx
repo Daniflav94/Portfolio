@@ -1,15 +1,32 @@
 import useDetectScroll from "@smakss/react-scroll-direction";
+import { Menu } from "lucide-react";
+import { useState } from "react";
 
 export function Navbar() {
   const { scrollPosition } = useDetectScroll();
+  const [openMenu, setOpenMenu] = useState(false);
+ 
+  let widthScreen = window.screen.width;
 
   return (
-    <header className="fixed w-screen z-[99999] ">
+    <header className="fixed w-screen h-16 z-[9999999] bg-midnight">
       <nav>
-        <ul className="flex items-center justify-center gap-16 h-16 bg-midnight font-medium font-sans">
+        <button
+          className="md:hidden m-5 fixed"
+          onClick={() => setOpenMenu(!openMenu)}
+        >
+          <Menu color="#a1a1aa" />
+        </button>
+        <ul
+          className={
+            !openMenu
+              ? "md:flex md:static md:flex-row hidden items-center justify-center  md:gap-16 md:h-16 md:border-0 bg-midnight font-medium font-sans"
+              : "absolute flex top-12 left-10 items-center py-3 w-40 border-[1px] rounded-md border-zinc-600 bg-midnight flex-col gap-3 font-medium font-sans"
+          }
+        >
           <li
             className={
-              scrollPosition.top < 600
+              scrollPosition.top < 600 && widthScreen >= 768
                 ? "text-zinc-50"
                 : "text-zinc-400 hover:text-zinc-50"
             }
@@ -20,7 +37,7 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top >= 600 && scrollPosition.top <= 1300
+              scrollPosition.top >= 600 && scrollPosition.top <= 1300 && widthScreen >= 768
                 ? "text-zinc-50"
                 : "text-zinc-400 hover:text-zinc-50"
             }
@@ -31,7 +48,7 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top > 1300 && scrollPosition.top <= 2100
+              scrollPosition.top > 1300 && scrollPosition.top <= 2100 && widthScreen >= 768
                 ? "text-zinc-50"
                 : "text-zinc-400 hover:text-zinc-50"
             }
@@ -42,7 +59,7 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top > 2100 && scrollPosition.top <= 3000
+              scrollPosition.top > 2100 && scrollPosition.top <= 3000 && widthScreen >= 768
                 ? "text-zinc-50"
                 : "text-zinc-400 hover:text-zinc-50"
             }
@@ -53,7 +70,7 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top > 3000
+              scrollPosition.top > 3000  && widthScreen >= 768
                 ? "text-zinc-50"
                 : "text-zinc-400 hover:text-zinc-50"
             }

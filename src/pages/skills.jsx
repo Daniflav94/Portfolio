@@ -25,8 +25,8 @@ import { stacksFront, stacksBack } from "../utils/mocks";
 
 export function Skills() {
   return (
-    <section id="skills" className="h-screen">
-      <div className="bg-zinc-600 w-screen">
+    <section id="skills" className="md:h-screen w-screen bg-midnight">
+      <div className="bg-zinc-600 w-screen hidden md:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -40,16 +40,18 @@ export function Skills() {
         </svg>
       </div>
 
-      <div className="w-screen h-[75vh] bg-midnight flex flex-col justify-center items-center relative -top-20">
-        <img src={logo} alt="" className="absolute right-10 bottom-0" />
-        <img src={frame} alt="" className="absolute left-10 top-10" />
-        <div className=" w-9/12 flex items-center mb-20 gap-5">
+      <div className="w-screen md:h-[75vh] bg-midnight flex flex-col justify-center items-center relative md:-top-20">
+        <img src={logo} alt="" className="absolute right-10 bottom-0 hidden md:flex  z-[99999]" />
+        <img src={frame} alt="" className="absolute left-10 top-10 hidden md:flex" />
+
+        <div className=" w-9/12 flex flex-row items-center justify-center md:justify-start mb-20 mt-10 md:mt-0 gap-5">
           <h2 className="text-zinc-50 font-medium text-4xl tracking-wider">
             <span className="text-lilac">#</span>habilidades
           </h2>
-          <div className="bg-lilac h-[2px] w-52 opacity-60"></div>
+          <div className="bg-lilac h-[2px] w-52 opacity-60 hidden md:flex"></div>
         </div>
-        <div className="flex  w-8/12 items-center justify-between mb-10">
+
+        <div className="flex md:flex-row flex-col w-8/12 items-center justify-between mb-10 gap-8">
           <div className="border-zinc-50 border-[1px] rounded-2xl h-fit max-w-md p-10 flex justify-center flex-col items-center relative">
             <span className="text-zinc-50 bg-midnight text-xl font-medium text-center mb-5 absolute -top-4">
               Frontend

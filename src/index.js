@@ -1,44 +1,48 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home } from './pages/home';
-import { About } from './pages/about';
-import { Projects } from './pages/projects';
-import { Contact } from './pages/contact';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Home } from "./pages/home";
+import { About } from "./pages/about";
+import { Projects } from "./pages/projects";
+import { Contact } from "./pages/contact";
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     children: [
       {
-        path: '/',
-        element: <Home/>
+        path: "/",
+        element: <Home />,
       },
       {
-        path: '/about',
-        element: <About/>
+        path: "/about",
+        element: <About />,
       },
       {
-        path: '/projects',
-        element: <Projects/>
+        path: "/projects",
+        element: <Projects />,
       },
       {
-        path: '/contact',
-        element: <Contact/>
+        path: "/contact",
+        element: <Contact />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}  />
+    <Theme>
+      <RouterProvider router={router} />
+    </Theme>
   </React.StrictMode>
 );
 
