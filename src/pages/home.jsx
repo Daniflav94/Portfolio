@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export function Home() {
   return (
-    <section className="pt-10 bg-midnight w-screen md:h-screen">
+    <section id="home" className="pt-10 dark:bg-midnight w-screen md:h-screen">
       <div className="hidden fixed bottom-0 left-5 z-[99999] md:flex flex-col items-center gap-2">
         <a
           href=" https://wa.me/5511945567816"
@@ -40,9 +40,8 @@ export function Home() {
         className="w-36 hidden md:flex  md:absolute -right-2 -top-8 z-[9999999]"
         alt="quadrado pontilhado"
       />
-      <div
-        id="home"
-        className="bg-midnight inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-screen"
+      <div       
+        className="inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-screen"
       >
         <div className="relative">
           <img
@@ -51,19 +50,19 @@ export function Home() {
             alt="Profile"
           />
           <div className="rounded-full md:w-[385px] md:h-[385px] w-[245px] h-[245px] absolute overflow-hidden md:top-28 top-20 left-7 bg-transparent z-[999] ">
-            <h1 className="absolute md:top-[45px] md:left-[240px] top-3 left-40 md:text-6xl text-4xl font-code font-regular tracking-widest ">
+            <h1 className="absolute md:top-[45px] md:left-[240px] top-3 left-40 md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-midnight ">
               Hello <br /> World!
             </h1>
           </div>
           <div className=" rounded-full  md:w-[385px] md:h-[385px] w-[245px] h-[245px]  absolute md:top-28 top-20 left-7 bg-transparent z-2 ">
-            <h1 className="absolute md:top-[45px] top-3 left-40 md:left-[240px] md:text-6xl text-4xl font-code font-regular tracking-widest text-white">
+            <h1 className="absolute md:top-[45px] top-3 left-40 md:left-[240px] md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-white">
               Hello <br /> World!
             </h1>
           </div>
         </div>
 
         <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 mt-16 md:mx-16 mx-5 md:px-16 flex flex-col justify-center font-sans">
-          <p className="text-gray text-xl mb-6">
+          <p className="dark:text-gray text-xl mb-6">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
             Desenvolvedora Fullstack
           </p>

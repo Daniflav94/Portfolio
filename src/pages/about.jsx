@@ -13,8 +13,8 @@ export function About() {
   }, [])
 
   return (
-    <section id="about" className="md:h-screen h-fit bg-zinc-600 w-screen">
-      <div className="bg-midnight w-screen hidden md:flex">
+    <section id="about" className="md:h-screen h-fit dark:bg-zinc-600 w-screen">
+      <div className="dark:bg-midnight w-screen hidden md:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -28,7 +28,7 @@ export function About() {
         </svg>
       </div>
 
-      <div className="md:bg-zinc-600 w-screen md:h-[65vh] flex justify-center items-center md:relative md:-top-20">        
+      <div className="dark:md:bg-zinc-600 w-screen md:h-[65vh] flex justify-center items-center md:relative md:-top-20">        
           <motion.div
             initial={{ x: -800, opacity: 1 }}
             transition={{
@@ -38,13 +38,13 @@ export function About() {
             }}
             {...typeAnimation}
               
-            className="bg-midnight md:rounded-2xl h-fit max-w-screen-lg p-12 relative"
+            className="dark:bg-midnight md:rounded-2xl h-fit max-w-screen-lg p-12 relative"
           >
             <img
               src={pontilhado}
               className="w-36 h-48 absolute -bottom-24 -right-16 hidden md:flex"
             />
-            <h2 className="text-zinc-50 text-center font-sans font-medium text-4xl tracking-wider">
+            <h2 className="dark:text-zinc-50 text-center font-sans font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>
               sobre mim
             </h2>

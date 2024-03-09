@@ -1,6 +1,7 @@
 import useDetectScroll from "@smakss/react-scroll-direction";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { ButtonDarkMode } from "./buttonDarkMode/buttonDarkMode";
 
 export function Navbar() {
   const { scrollPosition } = useDetectScroll();
@@ -17,6 +18,8 @@ export function Navbar() {
         >
           <Menu color="#a1a1aa" />
         </button>
+        <div className="w-10 h-10"><ButtonDarkMode /></div>
+        
         <ul
           className={
             !openMenu
