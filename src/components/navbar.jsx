@@ -31,7 +31,7 @@ export function Navbar() {
             className={
               !openMenu
                 ? "md:flex md:static md:flex-row hidden items-center justify-center  md:gap-16 md:h-16 md:border-0  font-medium font-sans"
-                : "absolute flex top-12 left-10 items-center py-3 w-40 border-[1px] rounded-md border-zinc-600 dark:bg-midnight bg-zinc-100 flex-col gap-3 font-medium font-sans"
+                : "absolute flex top-12 left-10 items-center py-3 w-40 border-[1px] rounded-md dark:border-zinc-600 border-zinc-300 dark:bg-midnight bg-zinc-100 flex-col gap-3 font-medium font-sans"
             }
           >
             <li
