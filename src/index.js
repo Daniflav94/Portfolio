@@ -10,6 +10,7 @@ import { Projects } from "./pages/projects";
 import { Contact } from "./pages/contact";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
+import { DarkModeContextProvider } from "./context/darkModeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -40,9 +41,11 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <Theme>
-      <RouterProvider router={router} />
-    </Theme>
+    <DarkModeContextProvider>
+      <Theme>
+        <RouterProvider router={router} />
+      </Theme>
+    </DarkModeContextProvider>
   </React.StrictMode>
 );
 

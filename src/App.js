@@ -7,7 +7,7 @@ import { Skills } from "./pages/skills";
 
 function App() {
   return (
-    <div className="w-screen h-screen">
+    <div>
       <Navbar />
       <Home />
       <About />
