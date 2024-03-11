@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.0831d5e0.css",
+    "main.js": "/Portfolio/static/js/main.4966ae92.js",
+    "static/js/453.106f7157.chunk.js": "/Portfolio/static/js/453.106f7157.chunk.js",
+    "static/media/cloneCinema.gif": "/Portfolio/static/media/cloneCinema.7707a88f2d43d62058e0.gif",
+    "static/media/appFilmesGif.gif": "/Portfolio/static/media/appFilmesGif.d416d3cb66dc6e75cc8e.gif",
+    "static/media/bibliotechGif.gif": "/Portfolio/static/media/bibliotechGif.63d35f78f51d92aa090f.gif",
+    "static/media/toDoListGif.gif": "/Portfolio/static/media/toDoListGif.b7ff1707629e9a32ab92.gif",
+    "static/media/clone-cinema.png": "/Portfolio/static/media/clone-cinema.c902e7e85af1462c3794.png",
+    "static/media/toDoList.png": "/Portfolio/static/media/toDoList.0aa07f0afd6d6b528175.png",
+    "static/media/picture-lilac.png": "/Portfolio/static/media/picture-lilac.c91dd7db590515ea60e2.png",
+    "static/media/livraria.gif": "/Portfolio/static/media/livraria.94b292361dafab202868.gif",
+    "static/media/livraria.png": "/Portfolio/static/media/livraria.fa2575b37ad2cce20611.png",
+    "static/media/app-filmes.jpeg": "/Portfolio/static/media/app-filmes.14cf9983a3580e9b166f.jpeg",
+    "static/media/bibliotech.png": "/Portfolio/static/media/bibliotech.a63c06d3441d77ada2f4.png",
+    "static/media/Curriculo.pdf": "/Portfolio/static/media/Curriculo.cede1fc30c7cd8e18368.pdf",
+    "static/media/pontilhado-lilas.png": "/Portfolio/static/media/pontilhado-lilas.b9d5e26a6138c993a87b.png",
+    "static/media/pontilhado-cinza.png": "/Portfolio/static/media/pontilhado-cinza.ce92054d123ea17076c7.png",
+    "static/media/pontilhado.png": "/Portfolio/static/media/pontilhado.3c5563e479bca0fb99f1.png",
+    "static/media/pontilhado-branco.png": "/Portfolio/static/media/pontilhado-branco.69d6f05e4f7e31086e1d.png",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.91719cb1a7e7e8fd60168f809703adeb.svg",
+    "static/media/Frame28.svg": "/Portfolio/static/media/Frame28.712e4ca731fd973ed289041f934a3877.svg",
+    "static/media/Github.svg": "/Portfolio/static/media/Github.8adab485ea6dc5380696d70cdcd5ec4f.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/Linkedin.svg": "/Portfolio/static/media/Linkedin.d81e5a385fe7336ec5abb96d77e56b49.svg",
+    "main.0831d5e0.css.map": "/Portfolio/static/css/main.0831d5e0.css.map",
+    "main.4966ae92.js.map": "/Portfolio/static/js/main.4966ae92.js.map",
+    "453.106f7157.chunk.js.map": "/Portfolio/static/js/453.106f7157.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0831d5e0.css",
+    "static/js/main.4966ae92.js"
+  ]
+}
