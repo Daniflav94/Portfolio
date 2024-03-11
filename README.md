@@ -2,10 +2,10 @@
 
 ## Tecnologias utilizadas:
 
--React;
--Tailwind CSS;
--Framer Motion;
--Redix UI.
+- React;
+- Tailwind CSS;
+- Framer Motion;
+- Redix UI.
 
 
 ## Imagens e demonstração:
