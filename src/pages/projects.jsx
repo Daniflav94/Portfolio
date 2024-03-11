@@ -28,14 +28,14 @@ export function Projects() {
         </div>
 
         <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen h-fit flex flex-col md:justify-start justify-center items-center relative md:-top-20">
-          <div className=" md:w-9/12 flex items-center mb-28 mt-10 md:mt-0 gap-5">
+          <div className=" md:w-9/12 flex items-center mb-20 mt-10 md:mt-0 gap-5">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>projetos
             </h2>
             <div className="bg-lilac h-[2px] w-52 opacity-60 hidden md:flex"></div>
           </div>
 
-          <div className="md:w-10/12 w-screen h-fit flex flex-wrap gap-10 justify-center">
+          <div className="md:w-10/12 w-11/12 h-fit flex flex-wrap md:gap-10 gap-3 justify-center items-center">
             {projects?.map((item) => (
               <Project item={item} key={item.id} />
             ))}
