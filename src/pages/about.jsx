@@ -10,12 +10,13 @@ export function About() {
     whileInView: { x: 0, opacity: 1 },
   });
 
+  let widthScreen = window.screen.width;
+  
   useEffect(() => {
-    let widthScreen = window.screen.width;
     widthScreen <= 768
       ? setTypeAnimation({ animate: { x: 0, opacity: 1 } })
       : setTypeAnimation({ whileInView: { x: 0, opacity: 1 } });
-  }, []);
+  }, [widthScreen]);
 
   const { darkMode } = useContext(DarkModeContext);
 
