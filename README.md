@@ -1,5 +1,8 @@
 # Meu Portfólio
 
+## Deploy:
+https://portfolio-daniele-almeida.vercel.app/
+
 ## Tecnologias utilizadas:
 
 - React;
