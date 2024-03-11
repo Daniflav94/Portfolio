@@ -22,7 +22,7 @@ export function About() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <section id="about" className="md:h-screen h-fit dark:bg-zinc-600 bg-zinc-100">
+      <section id="about" className="md:h-screen h-fit md:dark:bg-zinc-600 md:bg-zinc-200 dark:bg-midnight bg-zinc-100">
         <div className="dark:bg-midnight bg-zinc-100 w-screen hidden md:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
