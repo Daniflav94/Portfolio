@@ -9,9 +9,6 @@
 
 
 ## Imagens e demonstração:
-
-
-![1](https://github.com/Daniflav94/Portfolio/assets/99519903/90b5fed3-cc9c-4275-88a0-89cac933f1ff)
-![2](https://github.com/Daniflav94/Portfolio/assets/99519903/669f0c17-a517-443e-945d-4aacde3269e6)
-
+![1](https://github.com/Daniflav94/Portfolio/assets/99519903/628ebdc5-a350-4c6d-a59b-8c304c9d7f1e)
+![2](https://github.com/Daniflav94/Portfolio/assets/99519903/d76b1e8b-0ab0-4ded-b5ad-017d5df34eb6)
 
