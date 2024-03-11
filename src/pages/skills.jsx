@@ -30,7 +30,7 @@ export function Skills() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <section id="skills" className="md:h-screen dark:bg-midnight bg-zinc-100">
+      <section id="skills" className="md:h-fit dark:bg-midnight bg-zinc-100">
         <div className="dark:bg-zinc-600 bg-zinc-200 w-screen hidden md:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export function Skills() {
           </svg>
         </div>
 
-        <div className="w-screen md:h-[75vh] dark:bg-midnight bg-zinc-100 flex flex-col justify-center items-center relative md:-top-20">
+        <div className="w-screen md:h-fit dark:bg-midnight bg-zinc-100 flex flex-col justify-between items-center relative md:-top-20">
           <img
             src={logo}
             alt=""
@@ -57,14 +57,14 @@ export function Skills() {
             className="absolute left-10 top-10 hidden md:flex"
           />
 
-          <div className=" w-9/12 flex flex-row items-center justify-center md:justify-start mb-20 mt-10 md:mt-0 gap-5">
+          <div className=" w-9/12 flex flex-row items-center justify-center md:justify-start mb-28 mt-10 md:mt-0 gap-5">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>habilidades
             </h2>
             <div className="bg-lilac h-[2px] w-52 opacity-60 hidden md:flex"></div>
           </div>
 
-          <div className="flex md:flex-row flex-col w-8/12 items-center justify-between mb-10 gap-8">
+          <div className="flex md:flex-row flex-col w-6/12 items-center justify-between mb-10 gap-8">
             <div className="dark:border-zinc-50  border-gray border-[1px] rounded-2xl h-fit max-w-md p-10 flex justify-center flex-col items-center relative">
               <span className="dark:text-zinc-50 text-zinc-600 dark:bg-midnight bg-zinc-100 text-xl font-medium text-center mb-5 absolute -top-4">
                 Frontend

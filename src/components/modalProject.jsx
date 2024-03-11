@@ -32,7 +32,7 @@ export function ModalProject({ project }) {
                 </div>
               ))}
             </div>
-            <div className="flex justify-between">
+            <div className="flex md:justify-between justify-center gap-2">
               <a
                 href={project.github}
                 target="_blank"
@@ -64,9 +64,9 @@ export function ModalProject({ project }) {
             </div>
           </div>
           <Dialog.Close>
-            <button className="absolute top-5 right-5">
+            <span className="absolute top-5 right-5">
               <X size={25} color="#ABB2BF" />
-            </button>
+            </span>
           </Dialog.Close>
         </div>
       </Dialog.Content>

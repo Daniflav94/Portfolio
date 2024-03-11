@@ -61,19 +61,18 @@ export function Project({ item }) {
           </div>
           {isHover === item.id && widthScreen >= 768 && (
             <Dialog.Trigger>
-              <button className="absolute z-[999999] -bottom-0 left-0 w-full h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium text-sm animate-upButton">
+              <span className="absolute z-[999999] -bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium text-sm animate-upButton">
                 Ver mais
-              </button>
+              </span>
             </Dialog.Trigger>
-            
           )}
           {widthScreen <= 768 && (
-              <Dialog.Trigger>
-              <button className="absolute z-[999999] -bottom-0 left-0 w-full h-8 bg-lilac text-zinc-50 font-medium text-sm">
+            <Dialog.Trigger>
+              <span className="absolute z-[999999] -bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac text-zinc-50 font-medium text-sm">
                 Ver mais
-              </button>
+              </span>
             </Dialog.Trigger>
-              )}
+          )}
         </div>
         <ModalProject project={item} />
       </>

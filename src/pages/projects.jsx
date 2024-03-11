@@ -28,7 +28,7 @@ export function Projects() {
         </div>
 
         <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen h-fit flex flex-col md:justify-start justify-center items-center relative md:-top-20">
-          <div className=" md:w-9/12 flex items-center mb-20 mt-8 md:mt-0 gap-5">
+          <div className=" md:w-9/12 flex items-center mb-28 mt-10 md:mt-0 gap-5">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>projetos
             </h2>

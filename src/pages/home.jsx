@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
 import { ButtonDarkMode } from "../components/buttonDarkMode";
 import { ContactsBottom } from "../components/contactsBottom";
+import { projects } from "../utils/mocks";
 
 export function Home() {
   const { darkMode } = useContext(DarkModeContext);
@@ -18,10 +19,10 @@ export function Home() {
         <ContactsBottom />
         
         <img
-          src={`${darkMode ? pontilhado : pontilhadoBranco}`}
-          className="w-36 hidden md:flex md:absolute -right-2 top-16 z-[99999]"
-          alt="quadrado pontilhado"
-        />
+            src={`${darkMode ? pontilhado : pontilhadoBranco}`}
+            className="w-36 hidden md:flex md:absolute right-0 top-12 z-[99999]"
+            alt="quadrado pontilhado"
+          />
         <div className="inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-screen">
           <div className="relative">
             <img
@@ -63,6 +64,12 @@ export function Home() {
           </div>
         </div>
       </section>
+      <div className="hidden">
+        {projects.map((item, key) => (
+          <img src={item.video} key={key}  />
+        ))}
+      </div>
     </div>
+    
   );
 }

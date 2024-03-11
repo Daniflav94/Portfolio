@@ -36,7 +36,7 @@ export function About() {
           </svg>
         </div>
 
-        <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[65vh] flex justify-center items-center md:relative md:-top-20">
+        <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] flex justify-center items-center md:relative md:-top-10">
           <motion.div
             initial={{ x: -800, opacity: 1 }}
             transition={{
@@ -62,7 +62,7 @@ export function About() {
               usuário.
               <br />
               &emsp;&emsp;Atuo na área de programação há mais de 2 anos e possuo experiência como Desenvolvedora Fullstack, com
-              foco principal as áreas de
+              foco principal nas áreas de
               desenvolvimento web e mobile. Utilizo atualmente a stack
               JavaScript (Node, React & React Native) para desenvolver em ambas
               as frentes.

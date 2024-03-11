@@ -22,11 +22,13 @@ export function Navbar() {
           >
             <Menu color={`${!darkMode ? "#6d6d74" : "#a1a1aa"}`} />
           </button>
+
           <div className="fixed top-3 md:left-3 right-3 z-[9999999] w-10">
             <ButtonDarkMode />
           </div>
+
           <ul
-             className={
+            className={
               !openMenu
                 ? "md:flex md:static md:flex-row hidden items-center justify-center  md:gap-16 md:h-16 md:border-0  font-medium font-sans"
                 : "absolute flex top-12 left-10 items-center py-3 w-40 border-[1px] rounded-md border-zinc-600 dark:bg-midnight bg-zinc-100 flex-col gap-3 font-medium font-sans"
