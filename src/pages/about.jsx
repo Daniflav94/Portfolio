@@ -11,7 +11,7 @@ export function About() {
   });
 
   let widthScreen = window.screen.width;
-  
+
   useEffect(() => {
     widthScreen <= 768
       ? setTypeAnimation({ animate: { x: 0, opacity: 1 } })
@@ -22,7 +22,7 @@ export function About() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <section id="about" className="md:h-screen h-fit dark:bg-zinc-600 bg-zinc-200">
+      <section id="about" className="md:h-screen h-fit dark:bg-zinc-600 bg-zinc-100">
         <div className="dark:bg-midnight bg-zinc-100 w-screen hidden md:flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export function About() {
           </svg>
         </div>
 
-        <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] flex justify-center items-center md:relative md:-top-10">
+        <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10">
           <motion.div
             initial={{ x: -800, opacity: 1 }}
             transition={{

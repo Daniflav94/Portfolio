@@ -45,7 +45,7 @@ export function Skills() {
           </svg>
         </div>
 
-        <div className="w-screen md:h-fit dark:bg-midnight bg-zinc-100 flex flex-col justify-between items-center relative md:-top-20">
+        <div className="w-screen md:h-fit dark:bg-midnight bg-zinc-100 flex flex-col justify-between items-center relative md:-top-20 ">
           <img
             src={logo}
             alt=""
@@ -57,7 +57,7 @@ export function Skills() {
             className="absolute left-10 top-10 hidden md:flex"
           />
 
-          <div className=" md:w-9/12 w-screen flex flex-row items-center justify-center md:justify-start mb-20 mt-10 md:mt-0 gap-5">
+          <div className=" md:w-9/12 w-screen flex flex-row items-center justify-center md:justify-start mb-16 mt-16 md:mt-0 gap-5">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>habilidades
             </h2>

@@ -26,7 +26,7 @@ export function Contact() {
           </svg>
         </div>
         <div className="w-screen md:h-[75vh] h-fit dark:bg-midnight bg-zinc-100 flex flex-col items-center relative -top-10">
-          <div className="md:w-9/12 flex items-center mb-20 mt-20 md:mt-0 gap-5">
+          <div className="md:w-9/12 flex items-center mb-16 mt-28 md:mt-0 gap-5">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium text-4xl tracking-wider">
               <span className="text-lilac">#</span>contatos
             </h2>

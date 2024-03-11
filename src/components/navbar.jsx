@@ -40,6 +40,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
+              onClick={() => setOpenMenu(!openMenu)}
             >
               <a href="#home">
                 <span className="text-lilac">#</span>início
@@ -53,6 +54,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
+              onClick={() => setOpenMenu(!openMenu)}
             >
               <a href="#about">
                 <span className="text-lilac">#</span>sobre
@@ -66,6 +68,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
+              onClick={() => setOpenMenu(!openMenu)}
             >
               <a href="#skills">
                 <span className="text-lilac">#</span>habilidades
@@ -79,6 +82,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
+              onClick={() => setOpenMenu(!openMenu)}
             >
               <a href="#projects">
                 <span className="text-lilac">#</span>projetos
@@ -90,6 +94,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
+              onClick={() => setOpenMenu(!openMenu)}
             >
               <a href="#contact">
                 <span className="text-lilac">#</span>contatos
