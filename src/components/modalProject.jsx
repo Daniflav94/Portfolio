@@ -10,7 +10,7 @@ export function ModalProject({ project }) {
   return (
     <div className={`${darkMode && "dark"}`}>
       <Dialog.Content className="md:w-[82%] w-[94%] h-fit fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
-        <div className="relative md:grid md:grid-cols-3 flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
+        <div className="md:grid md:grid-cols-3 flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
           <div className="w-full h-full col-span-2">
             <img src={project.video} loading="lazy" />
           </div>
@@ -43,7 +43,7 @@ export function ModalProject({ project }) {
                   whileTap={{ scale: 0.8 }}
                   className="dark:text-midnight text-zinc-50 bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
                 >
-                  <span className="relative z-10 ">Repositório</span>
+                  <span>Repositório</span>
                 </motion.button>
               </a>
               {project.deploy && (
@@ -57,7 +57,7 @@ export function ModalProject({ project }) {
                     whileTap={{ scale: 0.8 }}
                     className="text-lilac dark:bg-midnight bg-zinc-100 border-[1px] border-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
                   >
-                    <span className="relative z-10">Deploy</span>
+                    <span>Deploy</span>
                   </motion.button>
                 </a>
               )}

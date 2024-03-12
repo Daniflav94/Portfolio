@@ -29,11 +29,11 @@ export function Project({ item }) {
       <>
         <div
           key={item.id}
-          className="w-96 h-60 box-border overflow-hidden relative border-b-2 border-lilac md:hover:scale-110 transition ease-in-out"
+          className="max-w-96 max-h-60 overflow-hidden box-border relative md:border-b-2 border-lilac md:hover:scale-110 md:transition md:ease-in-out"
           onMouseEnter={() => setHover(item.id)}
           onMouseLeave={() => setHover("")}
         >
-          <img src={item.image} alt="imagem aplicação" />
+          <img src={item.image} alt="imagem aplicação" className="w-96 h-60 object-cover" />
           <div className="w-96 h-60 bg-black/55 absolute top-0 "></div>
           <div className="absolute top-0 left-0 w-96 h-60 flex flex-col justify-center items-center z-[999999]">
             <span className=" text-zinc-50 font-medium text-2xl">
