@@ -18,7 +18,7 @@ export function Navbar() {
         <nav>
           <button
             className="md:hidden m-5 fixed"
-            onClick={() => setOpenMenu(false)}
+            onClick={() => setOpenMenu(!openMenu)}
           >
             <Menu color={`${!darkMode ? "#6d6d74" : "#a1a1aa"}`} />
           </button>
@@ -40,7 +40,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
-              onClick={() => setOpenMenu(false)}
+              onClick={() => widthScreen < 768 && setOpenMenu(false)}
             >
               <a href="#home">
                 <span className="text-lilac">#</span>início
@@ -54,7 +54,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
-              onClick={() => setOpenMenu(false)}
+              onClick={() => widthScreen < 768 && setOpenMenu(false)}
             >
               <a href="#about">
                 <span className="text-lilac">#</span>sobre
@@ -68,7 +68,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
-              onClick={() => setOpenMenu(false)}
+              onClick={() => widthScreen < 768 && setOpenMenu(false)}
             >
               <a href="#skills">
                 <span className="text-lilac">#</span>habilidades
@@ -82,7 +82,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
-              onClick={() => setOpenMenu(false)}
+              onClick={() => widthScreen < 768 && setOpenMenu(false)}
             >
               <a href="#projects">
                 <span className="text-lilac">#</span>projetos
@@ -94,7 +94,7 @@ export function Navbar() {
                   ? "dark:text-zinc-50 text-lilacDark"
                   : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
               }
-              onClick={() => setOpenMenu(false)}
+              onClick={() => widthScreen < 768 && setOpenMenu(false)}
             >
               <a href="#contact">
                 <span className="text-lilac">#</span>contatos
