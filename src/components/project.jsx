@@ -20,7 +20,7 @@ import { X } from "lucide-react";
 import { ModalProject } from "./modalProject";
 
 export function Project({ item }) {
-  const [hover, setHover] = useState("");
+  const [projectIdHover, setProjectIdHover] = useState("");
 
   let widthScreen = window.screen.width;
 
@@ -30,8 +30,8 @@ export function Project({ item }) {
         <div
           key={item.id}
           className="max-w-96 max-h-60 overflow-hidden box-border relative md:border-b-2 border-lilac md:hover:scale-110 md:transition md:ease-in-out"
-          onMouseEnter={() => setHover(item.id)}
-          onMouseLeave={() => setHover("")}
+          onMouseEnter={() => setProjectIdHover(item.id)}
+          onMouseLeave={() => setProjectIdHover("")}
         >
           <img src={item.image} alt="imagem aplicação" className="w-96 h-60 object-cover" />
           <div className="w-96 h-60 bg-black/55 absolute top-0 "></div>
@@ -59,7 +59,7 @@ export function Project({ item }) {
               ))}
             </div>
           </div>
-          {hover === item.id && widthScreen > 768 && (
+          {projectIdHover === item.id && widthScreen > 768 && (
             <Dialog.Trigger>
               <span className="absolute z-[999999] -bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium text-sm animate-upButton">
                 Ver mais
