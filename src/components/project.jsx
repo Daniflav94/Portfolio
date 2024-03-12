@@ -20,7 +20,7 @@ import { X } from "lucide-react";
 import { ModalProject } from "./modalProject";
 
 export function Project({ item }) {
-  const [isHover, setIsHover] = useState("");
+  const [hover, setHover] = useState("");
 
   let widthScreen = window.screen.width;
 
@@ -29,9 +29,9 @@ export function Project({ item }) {
       <>
         <div
           key={item.id}
-          className="w-96 h-60 box-border overflow-hidden relative border-b-2 border-lilac hover:scale-110 transition ease-in-out"
-          onMouseEnter={() => setIsHover(item.id)}
-          onMouseLeave={() => setIsHover("")}
+          className="w-96 h-60 box-border overflow-hidden relative border-b-2 border-lilac md:hover:scale-110 transition ease-in-out"
+          onMouseEnter={() => setHover(item.id)}
+          onMouseLeave={() => setHover("")}
         >
           <img src={item.image} alt="imagem aplicação" />
           <div className="w-96 h-60 bg-black/55 absolute top-0 "></div>
@@ -59,7 +59,7 @@ export function Project({ item }) {
               ))}
             </div>
           </div>
-          {isHover === item.id && widthScreen >= 768 && (
+          {hover === item.id && widthScreen > 768 && (
             <Dialog.Trigger>
               <span className="absolute z-[999999] -bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac hover:bg-lilacDark text-zinc-50 font-medium text-sm animate-upButton">
                 Ver mais
@@ -68,7 +68,7 @@ export function Project({ item }) {
           )}
           {widthScreen <= 768 && (
             <Dialog.Trigger>
-              <span className="absolute z-[999999] -bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac text-zinc-50 font-medium text-sm">
+              <span className="absolute z-[999999] bottom-0 left-0 w-full flex items-center justify-center h-8 bg-lilac text-zinc-50 font-medium text-sm">
                 Ver mais
               </span>
             </Dialog.Trigger>
