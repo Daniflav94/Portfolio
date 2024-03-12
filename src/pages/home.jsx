@@ -1,5 +1,5 @@
 import imageProfile from "../assets/image/picture-lilac.png";
-import curriculo from "../assets/files/Curriculo.pdf";
+import curriculo from "../assets/files/Curriculo2.pdf";
 import pontilhado from "../assets/image/pontilhado.png";
 import pontilhadoBranco from "../assets/image/pontilhado-branco.png";
 
