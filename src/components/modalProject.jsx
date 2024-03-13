@@ -1,14 +1,9 @@
 import { X } from "lucide-react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { DarkModeContext } from "../context/darkModeContext";
 
 export function ModalProject({ project }) {
-  const { darkMode } = useContext(DarkModeContext);
-
   return (
-    <div className={`${darkMode && "dark"}`}>
       <Dialog.Content className="md:w-[82%] w-[94%] h-fit fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
         <div className="md:grid md:grid-cols-3 flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
           <div className="w-full h-full col-span-2">
@@ -70,6 +65,5 @@ export function ModalProject({ project }) {
           </Dialog.Close>
         </div>
       </Dialog.Content>
-    </div>
   );
 }
