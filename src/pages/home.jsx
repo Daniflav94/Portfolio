@@ -44,7 +44,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 mt-16 md:mx-16 mx-5 md:px-16 flex flex-col justify-center font-sans">
+        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 mt-16 md:mx-20 mx-5 md:ps-20 flex flex-col justify-center font-sans">
           <p className="dark:text-gray text-zinc-600 text-xl mb-6">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
             Desenvolvedora Fullstack
