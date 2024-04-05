@@ -22,7 +22,7 @@ export function Home() {
 
       <img
         src={`${darkMode ? pontilhado : pontilhadoBranco}`}
-        className="w-36 hidden md:flex md:absolute right-0 top-10 z-[99999]"
+        className="w-36 hidden md:flex md:absolute right-0 top-0 z-[99999]"
         alt="quadrado pontilhado"
       />
       <div className="inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-full">
