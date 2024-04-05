@@ -18,7 +18,7 @@ export const projects = [
     github: "https://github.com/Daniflav94/App-filmes",
     deploy: "https://api-filmes-1c278.web.app/filmes",
     description:
-      "Aplicação web de filmes personalizável que consome a API do The Movie Database, onde o usuário pode se cadastrar e fazer login, salvar filmes, avaliar, favoritar e fazer pesquisas.",
+      "Aplicação web de filmes personalizável que consome a API do The Movie Database, onde o usuário pode se cadastrar e fazer login, salvar filmes, avaliar, favoritar e fazer pesquisas. Caso queira testar a aplicação, utilize essas credenciais: email: teste2024@email.com, senha: 123456",
     video: appFilmesGif,
   },
   {
@@ -39,7 +39,7 @@ export const projects = [
     github: "https://github.com/Daniflav94/App-bibliotech",
     deploy: "https://app-bibliotech.web.app/home",
     description:
-      "Aplicação web para administração de biblioteca, onde é possível cadastrar livros e fazer empréstimos. O usuário/bibliotecário pode visualizar as informações de empréstimos de livros em tabela, editar o empréstimo ou alterar na tabela o status para devolvido.",
+      "Esse projeto foi desenvolvido em equipe durante o bootcamp Java Fullstack, se trata de uma aplicação web para administração de biblioteca, onde é possível cadastrar livros e fazer empréstimos. O usuário/bibliotecário pode visualizar as informações de empréstimos de livros em tabela, editar o empréstimo ou alterar na tabela o status para devolvido.",
     video: bibliotechGif,
   },
   {
