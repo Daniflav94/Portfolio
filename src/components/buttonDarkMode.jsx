@@ -8,7 +8,7 @@ export function ButtonDarkMode() {
     <button
       onClick={() => setDarkMode(!darkMode)}
       className={`${
-        darkMode ? "hover:bg-zinc-600" : "hover:bg-purple-100"
+        darkMode ? "hover:bg-zinc-600 transition ease-linear" : "hover:bg-purple-100 transition ease-linear"
       } w-fit h-fit p-2 rounded-xl`}
     >
       {darkMode ? (

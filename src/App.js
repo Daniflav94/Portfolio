@@ -5,19 +5,21 @@ import { Projects } from "./pages/projects";
 import { Contact } from "./pages/contact";
 import { Skills } from "./pages/skills";
 import { useContext } from "react";
-import { DarkModeContext } from "./context/darkModeContext"; 
+import { DarkModeContext } from "./context/darkModeContext";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
-  
+
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} relative`}>
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div className="md:mt-16">
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }

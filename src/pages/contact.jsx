@@ -35,7 +35,7 @@ export function Contact() {
           <div className="bg-lilac h-[2px] w-52 opacity-60 md:flex hidden"></div>
         </div>
 
-        <div className="md:w-9/12 w-screen flex md:flex-row flex-col justify-between gap-8">
+        <div className="md:w-9/12 w-screen max-h-[650px] md:max-h-screen flex-wrap flex md:flex-row flex-col justify-between items-center gap-5 md:gap-8 pb-16 px-5">
           <motion.a
             href="https://www.linkedin.com/in/daniele-f-almeida/"
             target="_blank"
@@ -44,7 +44,7 @@ export function Contact() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
           >
-            <div className="rounded-full border-lilac border-[1px] p-5 w-20">
+            <div className="rounded-full border-lilac border-[1px] p-5 md:w-20">
               <img src={linkedin} alt="" className=" w-10" />
             </div>
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
@@ -85,7 +85,7 @@ export function Contact() {
           </motion.div>
 
           <motion.a
-            className="flex flex-col gap-3 w-auto justify-center items-center"
+            className="flex flex-col gap-3 w-26 md:auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             href=" https://wa.me/5511945567816"
@@ -102,7 +102,7 @@ export function Contact() {
           </motion.a>
 
           <motion.a
-            className="flex flex-col gap-3 w-auto justify-center items-center"
+            className="flex flex-col gap-3 md:auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             href="mailto:danyelly_mell@hotmail.com"
@@ -113,7 +113,9 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               E-mail
             </span>
-            <span className="text-gray text-sm">danyelly_mell@hotmail.com</span>
+            <span className="text-gray text-sm w-[100px] md:w-auto">
+              danyelly_mell@hotmail.com
+            </span>
           </motion.a>
         </div>
       </div>

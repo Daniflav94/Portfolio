@@ -18,8 +18,11 @@ export default {
       },
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-30deg)' },
-          '50%': { transform: 'rotate(3deg)' }
+          '0%': { transform: 'rotate(0deg)' },
+   '80%': { transform: 'rotate(0deg)' },
+   '85%': { transform: 'rotate(10deg)' },
+   '95%': { transform: 'rotate(-10deg)' },
+  '100%': { transform: 'rotate(0deg)' },
         },
         upButton: {
           '0%': { transform: 'translateY(50px)'},
@@ -27,8 +30,8 @@ export default {
         }
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-        upButton: 'upButton 0.2s ease-in-out'
+        wiggle: 'wiggle 1s ease infinite',
+        upButton: 'upButton 0.25s ease-in-out'
       }
     },
   },

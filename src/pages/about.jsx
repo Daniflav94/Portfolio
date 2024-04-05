@@ -2,28 +2,21 @@ import { MapPin, Mail } from "lucide-react";
 import pontilhado from "../assets/image/pontilhado-cinza.png";
 import pontilhadoLilas from "../assets/image/pontilhado-lilas.png";
 import { motion } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
+import { useInView } from "framer-motion"
+
 
 export function About() {
   const { darkMode } = useContext(DarkModeContext);
 
-  const [typeAnimation, setTypeAnimation] = useState({
-    whileInView: { x: 0, opacity: 1 },
-  });
-
-  let widthScreen = window.screen.width;
-
-  useEffect(() => {
-    widthScreen <= 768
-      ? setTypeAnimation({ animate: { x: 0, opacity: 1 } })
-      : setTypeAnimation({ whileInView: { x: 0, opacity: 1 } });
-  }, [widthScreen]);
+  const ref = useRef(null)
+  const isInView = useInView(ref)
 
   return (
     <section
       id="about"
-      className="md:h-screen h-fit md:dark:bg-zinc-600 md:bg-zinc-200 dark:bg-midnight bg-zinc-100"
+      className="md:h-auto h-fit md:dark:bg-zinc-600 md:bg-zinc-200 dark:bg-midnight bg-zinc-100"
     >
       <div className="dark:bg-midnight bg-zinc-100 w-screen hidden md:flex">
         <svg
@@ -39,15 +32,13 @@ export function About() {
         </svg>
       </div>
 
-      <div className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10">
-        <motion.div
-          initial={{ x: -800, opacity: 1 }}
-          transition={{
-            ease: "easeIn",
-            delay: 0.1,
-            duration: 0.8,
-          }}
-          {...typeAnimation}
+      <div ref={ref} className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10">
+        <div
+         style={{
+          transform: isInView ? "none" : "translateX(-1000px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.35s"
+        }}
           className="dark:bg-midnight bg-zinc-100 md:rounded-2xl h-fit max-w-screen-lg p-12 relative"
         >
           <img
@@ -90,7 +81,7 @@ export function About() {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ export function Project({ item }) {
       <>
         <div
           key={item.id}
-          className="max-w-96 max-h-60 overflow-hidden box-border relative md:border-b-2 border-lilac md:hover:scale-110 md:transition md:ease-in-out"
+          className="max-w-96 max-h-60 overflow-hidden box-border rounded-[3px] relative md:border-b-2 border-lilac md:hover:scale-110 md:transition md:ease-linear"
           onMouseEnter={() => setProjectIdHover(item.id)}
           onMouseLeave={() => setProjectIdHover("")}
         >

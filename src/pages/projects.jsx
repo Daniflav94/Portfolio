@@ -10,7 +10,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="md:h-fit h-fit dark:md:bg-zinc-600 md:bg-zinc-200 dark:bg-midnight bg-zinc-100 relative"
+      className="h-fit dark:md:bg-zinc-600 md:bg-zinc-200 dark:bg-midnight bg-zinc-100 relative"
     >
       <div className="dark:bg-midnight bg-zinc-100 w-screen">
         <svg

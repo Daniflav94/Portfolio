@@ -13,16 +13,16 @@ export function Navbar() {
   let widthScreen = window.screen.width;
 
   return (
-    <header className="fixed w-screen h-16 z-[9999999] dark:bg-midnight bg-zinc-100 border-b-[1px] border-lilac">
+    <header className="fixed h-12 md:h-16 top-0 w-screen z-[9999999] dark:bg-midnight bg-zinc-100 border-b-[1px] border-lilac">
       <nav>
         <button
-          className="md:hidden m-5 fixed"
+          className="md:hidden m-3 fixed"
           onClick={() => setOpenMenu(!openMenu)}
         >
           <Menu color={`${!darkMode ? "#6d6d74" : "#a1a1aa"}`} />
         </button>
 
-        <div className="fixed top-3 md:left-3 right-3 z-[9999999] w-10">
+        <div className="fixed top-1 md:top-3 md:left-3 right-2 z-[9999999] w-10">
           <ButtonDarkMode />
         </div>
 
@@ -37,7 +37,7 @@ export function Navbar() {
             className={
               scrollPosition.top < 600 && widthScreen >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
-                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
+                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
@@ -47,11 +47,11 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top >= 600 &&
+              scrollPosition.top > 600 &&
               scrollPosition.top <= 1300 &&
               widthScreen >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
-                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
+                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
@@ -65,7 +65,7 @@ export function Navbar() {
               scrollPosition.top <= 2100 &&
               widthScreen >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
-                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
+                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
@@ -79,7 +79,7 @@ export function Navbar() {
               scrollPosition.top <= 3000 &&
               widthScreen >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
-                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
+                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
@@ -91,7 +91,7 @@ export function Navbar() {
             className={
               scrollPosition.top > 3000 && widthScreen >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
-                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark"
+                : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
