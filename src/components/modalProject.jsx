@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 export function ModalProject({ project }) {
   return (
-      <Dialog.Content className="md:w-[82%] w-[94%] h-fit fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
+      <Dialog.Content className="md:w-[82%] w-[94%] h-fit max-h-[90%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
         <div className="md:grid md:grid-cols-3 flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
           <div className="w-full h-full col-span-2">
             <img src={project.video} loading="lazy" />
           </div>
 
-          <div className="flex flex-col gap-6 justify-around">
-            <h2 className="dark:text-zinc-50 text-zinc-600 font-medium md:text-3xl text-2xl">
+          <div className="flex flex-col md:gap-6 gap-4 justify-around">
+            <h2 className="dark:text-zinc-50 text-zinc-600 font-medium md:text-3xl text-2xl text-center md:text-left">
               {project.title}
             </h2>
-            <span className="dark:text-zinc-200">Data: {project.date}</span>
+            <span className="dark:text-zinc-300">Data: {project.date}</span>
             <span className="dark:text-gray text-zinc-500 font-sans ">{project.description}</span>
             <div className="flex flex-wrap md:gap-3 gap-2">
               {project?.stacks.map((stack, key) => (
@@ -60,7 +60,7 @@ export function ModalProject({ project }) {
             </div>
           </div>
           <Dialog.Close>
-            <span className="absolute top-5 right-5">
+            <span className="absolute top-4 right-4">
               <X size={25} color="#ABB2BF" />
             </span>
           </Dialog.Close>
