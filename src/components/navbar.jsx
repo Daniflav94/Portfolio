@@ -41,9 +41,9 @@ export function Navbar() {
             }
             onClick={() => widthScreen < 768 && setOpenMenu(false)}
           >
-            <a href="#home">
+            <button onClick={() => window.scrollTo(0, 0)}>
               <span className="text-lilac">#</span>início
-            </a>
+            </button>
           </li>
           <li
             className={

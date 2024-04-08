@@ -30,7 +30,7 @@ export default {
         }
       },
       animation: {
-        wiggle: 'wiggle 1s ease infinite',
+        wiggle: 'wiggle 0.6s ease',
         upButton: 'upButton 0.25s ease-in-out'
       }
     },

@@ -13,19 +13,21 @@ import { projects } from "../utils/mocks";
 export function Home() {
   const { darkMode } = useContext(DarkModeContext);
 
+  let height = window.screen.height;
+
   return (
     <section
       id="home"
-      className="dark:bg-midnight bg-zinc-100 md:h-screen "
+      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative ${height <= 770 ? "py-20 md:h-[105vh]" : "mt-16"}`}   
     >
       <ContactsBottom />
 
       <img
         src={`${darkMode ? pontilhado : pontilhadoBranco}`}
-        className="w-36 hidden md:flex md:absolute right-0 top-0 z-[99999]"
+        className={`w-36 hidden md:flex md:absolute right-0 bottom-0 z-[99999]`}
         alt="quadrado pontilhado"
       />
-      <div className="inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-full">
+      <div className="inline-block mx-10 my-10 md:mx-0 md:my-10 md:flex md:justify-center md:items-center w-screen md:h-screen">
         <div className="relative">
           <img
             src={imageProfile}

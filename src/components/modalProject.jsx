@@ -14,6 +14,7 @@ export function ModalProject({ project }) {
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium md:text-3xl text-2xl">
               {project.title}
             </h2>
+            <span className="dark:text-zinc-200">Data: {project.date}</span>
             <span className="dark:text-gray text-zinc-500 font-sans ">{project.description}</span>
             <div className="flex flex-wrap md:gap-3 gap-2">
               {project?.stacks.map((stack, key) => (

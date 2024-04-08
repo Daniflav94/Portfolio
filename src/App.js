@@ -13,13 +13,11 @@ function App() {
   return (
     <div className={`${darkMode && "dark"} relative`}>
       <Navbar />
-      <div className="md:mt-16">
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
-      </div>
     </div>
   );
 }

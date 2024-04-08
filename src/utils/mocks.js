@@ -20,6 +20,7 @@ export const projects = [
     description:
       "Aplicação web de filmes personalizável que consome a API do The Movie Database, onde o usuário pode se cadastrar e fazer login, salvar filmes, avaliar, favoritar e fazer pesquisas. Caso queira testar a aplicação, utilize essas credenciais: email: teste2024@email.com, senha: 123456",
     video: appFilmesGif,
+    date: "02/2023"
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ export const projects = [
     description:
       "Aplicação web de lista de tarefas completa que possui autenticação, listas principais já prontas e opção de criar novas listas, com possibilidade de personalizar a imagem de fundo de cada uma. As tarefas possuem opção de inserir data e repetição diária, semanal ou mensal, também é possível editar as informações inseridas, adicionar anotações e excluir uma tarefa.",
     video: toDoListGif,
+    date: "03/2023"
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ export const projects = [
     description:
       "Esse projeto foi desenvolvido em equipe durante o bootcamp Java Fullstack, se trata de uma aplicação web para administração de biblioteca, onde é possível cadastrar livros e fazer empréstimos. O usuário/bibliotecário pode visualizar as informações de empréstimos de livros em tabela, editar o empréstimo ou alterar na tabela o status para devolvido.",
     video: bibliotechGif,
+    date: "11/2022"
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ export const projects = [
     description:
       "Página da web que possibilita adicionar informações de livros através de um formulário e exibi-los em formato de card, com capa, título, autor e uma nota pessoal. Foram utilizados as ferramentas do Angular: DataBinding, Diretivas e Comunicação entre componentes para fazer a interação entre os dados inseridos no formulário e a exibição dos cards e para adicionar a opção de excluir um card.",
     video: livrariaGif,
+    date: "11/2022"
   },
   {
     id: 5,
@@ -61,7 +65,8 @@ export const projects = [
     deploy: "https://daniflav94.github.io/Site_Clone_Cinema/",
     description:
       "Aplicação clone do site de cinema da minha cidade Cinearaújo, desenvolvido no início dos meus estudos para praticar HTML e CSS.",
-    video: cloneCinemaGif
+    video: cloneCinemaGif,
+    date: "10/2022"
   },
 ];
 
