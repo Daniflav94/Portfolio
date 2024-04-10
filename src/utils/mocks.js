@@ -127,23 +127,31 @@ export const stacksBack = [
     delay: 0.7,
   },
   {
-    stack: "JavaIcon",
+    stack: "ExpressIcon",
     delay: 0.75,
   },
   {
-    stack: "SpringIcon",
+    stack: "PrismaIcon",
     delay: 0.8,
   },
   {
-    stack: "MySQLIcon",
+    stack: "JavaIcon",
     delay: 0.85,
   },
   {
-    stack: "PostgresIcon",
+    stack: "SpringIcon",
     delay: 0.9,
   },
   {
-    stack: "FirebaseIcon",
+    stack: "MySQLIcon",
     delay: 0.95,
+  },
+  {
+    stack: "PostgresIcon",
+    delay: 1,
+  },
+  {
+    stack: "FirebaseIcon",
+    delay: 1.05,
   },
 ];

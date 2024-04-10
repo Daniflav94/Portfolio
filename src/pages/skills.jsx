@@ -17,6 +17,8 @@ import {
   NodeIcon,
   PostgresIcon,
   SpringIcon,
+  ExpressIcon,
+  PrismaIcon,
 } from "../assets/image/stacks";
 import { motion, MotionConfig } from "framer-motion";
 import logo from "../assets/image/logo.svg";
@@ -117,6 +119,8 @@ export function Skills() {
                 >
                   {item.stack === "NodeIcon" && <NodeIcon />}
                   {item.stack === "NestIcon" && <NestIcon />}
+                  {item.stack === "ExpressIcon" && <ExpressIcon />}
+                  {item.stack === "PrismaIcon" && <PrismaIconIcon />}
                   {item.stack === "JavaIcon" && <JavaIcon />}
                   {item.stack === "SpringIcon" && <SpringIcon />}
                   {item.stack === "MySQLIcon" && <MySQLIcon />}

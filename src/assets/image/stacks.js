@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 
-
-
 export const ReactIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
@@ -14,7 +12,9 @@ export const ReactIcon = ({ justIcon = false }) => {
             <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
           </g>
         </svg>
-        {!justIcon && <span className="dark:text-zinc-50 text-zinc-600 text-sm">React</span>}
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-sm">React</span>
+        )}
       </div>
     </div>
   );
@@ -51,7 +51,9 @@ export const ReduxIcon = ({ justIcon = false }) => {
             d="M88.69 88.11c-9 18.4-24.76 30.78-45.61 34.85a39.73 39.73 0 0 1-9.77 1.14c-12 0-23-5-28.34-13.19C-2.2 100-4.64 76.87 19 59.76c.48 2.61 1.46 6.19 2.11 8.31A38.24 38.24 0 0 0 10 81.1c-4.4 8.64-3.91 17.27 1.3 25.25 3.6 5.38 9.3 8.65 16.63 9.65a44 44 0 0 0 26.55-5c12.71-6.68 21.18-14.66 26.72-25.57a9.32 9.32 0 0 1-2.61-6A9.12 9.12 0 0 1 87.37 70h.34a9.15 9.15 0 0 1 1 18.25zm28.67-20.2c12.21 13.84 12.54 30.13 7.82 39.58-4.4 8.63-16 17.27-31.6 17.27a50.48 50.48 0 0 1-21-5.05c2.29-1.63 5.54-4.24 7.33-5.87a41.54 41.54 0 0 0 16 3.42c10.1 0 17.75-4.72 22.31-13.35 2.93-5.7 3.1-12.38.33-19.22a43.61 43.61 0 0 0-17.27-20.85 62 62 0 0 0-34.74-10.59h-2.93a9.21 9.21 0 0 1-8 5.54h-.31a9.13 9.13 0 0 1-.3-18.25h.33a9 9 0 0 1 8 4.89h2.61c20.8 0 39.06 7.98 51.42 22.48zm-82.75 23a7.31 7.31 0 0 1 1.14-4.73c-9.12-15.8-14-35.83-6.51-56.68C34.61 13.83 48.13 3.24 62.79 3.24c15.64 0 31.93 13.69 33.88 30.07-2.44-.81-6-2-8.14-2.44-.53-8.63-7.82-30.13-25.09-29.81-6.19.17-15.31 3.1-20 9.12a43.69 43.69 0 0 0-9.64 25.25 59.61 59.61 0 0 0 8.47 36.16 2.75 2.75 0 0 1 1.14-.16h.32a9.121 9.121 0 0 1 .33 18.24h-.33a9.16 9.16 0 0 1-9.12-8.79z"
           ></path>
         </svg>
-        {!justIcon && <span className="dark:text-zinc-50 text-zinc-600 text-sm">Redux</span>}
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-sm">Redux</span>
+        )}
       </div>
     </div>
   );
@@ -69,7 +71,9 @@ export const JestIcon = ({ justIcon = false }) => {
           ></path>
         </svg>
 
-        {!justIcon && <span className="dark:text-zinc-50 text-zinc-600 text-sm">Jest</span>}
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-sm">Jest</span>
+        )}
       </div>
     </div>
   );
@@ -87,7 +91,9 @@ export const HTMLIcon = ({ justIcon = false }) => {
           ></path>
         </svg>
 
-        {!justIcon && <span className="dark:text-zinc-50 text-zinc-600 text-sm">HTML</span>}
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-sm">HTML</span>
+        )}
       </div>
     </div>
   );
@@ -105,7 +111,9 @@ export const CSSIcon = ({ justIcon = false }) => {
           ></path>
         </svg>
 
-        {!justIcon && <span className="dark:text-zinc-50 text-zinc-600 text-sm">CSS</span>}
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-sm">CSS</span>
+        )}
       </div>
     </div>
   );
@@ -153,7 +161,9 @@ export const GraphQLIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">GraphQL</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            GraphQL
+          </span>
         )}
       </div>
     </div>
@@ -173,7 +183,9 @@ export const AngularIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Angular</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Angular
+          </span>
         )}
       </div>
     </div>
@@ -193,7 +205,9 @@ export const JSIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Javascript</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Javascript
+          </span>
         )}
       </div>
     </div>
@@ -213,7 +227,9 @@ export const TSIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Typescript</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Typescript
+          </span>
         )}
       </div>
     </div>
@@ -233,7 +249,9 @@ export const NodeIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">NodeJS</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            NodeJS
+          </span>
         )}
       </div>
     </div>
@@ -252,7 +270,9 @@ export const NestIcon = () => {
           ></path>
         </svg>
 
-        <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">NestJS</span>
+        <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+          NestJS
+        </span>
       </div>
     </div>
   );
@@ -271,7 +291,9 @@ export const JavaIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Java</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Java
+          </span>
         )}
       </div>
     </div>
@@ -291,7 +313,9 @@ export const SpringIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Spring</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Spring
+          </span>
         )}
       </div>
     </div>
@@ -311,7 +335,9 @@ export const MySQLIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">MySQL</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            MySQL
+          </span>
         )}
       </div>
     </div>
@@ -332,7 +358,9 @@ export const PostgresIcon = () => {
           ></path>
         </svg>
 
-        <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">PostgreSQL</span>
+        <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+          PostgreSQL
+        </span>
       </div>
     </div>
   );
@@ -351,7 +379,53 @@ export const FirebaseIcon = ({ justIcon = false }) => {
         </svg>
 
         {!justIcon && (
-          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">Firebase</span>
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Firebase
+          </span>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export const ExpressIcon = ({ justIcon = false }) => {
+  const { darkMode } = useContext(DarkModeContext);
+  return (
+    <div className={`${darkMode && "dark"}`}>
+      <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
+        <svg viewBox="0 0 128 128">
+          <path
+            fill="#C778DD"
+            d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z"
+          ></path>
+        </svg>
+
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Express
+          </span>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export const PrismaIcon = ({ justIcon = false }) => {
+  const { darkMode } = useContext(DarkModeContext);
+  return (
+    <div className={`${darkMode && "dark"}`}>
+      <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
+        <svg viewBox="0 0 128 128">
+          <path
+            fill="#C778DD"
+            d="M66.457.014a6.308 6.308 0 0 0-5.812 3.028l-47.87 78.072a6.379 6.379 0 0 0 .048 6.748l23.568 37.186a6.387 6.387 0 0 0 7.22 2.683l68.012-20.407a6.37 6.37 0 0 0 3.96-8.765l-43.72-94.85A6.298 6.298 0 0 0 66.46.014Zm1.795 23.95a2.348 2.348 0 0 1 2.448 1.433l30.16 69.784a2.39 2.39 0 0 1-1.512 3.241l-46.996 14.024a2.39 2.39 0 0 1-3.024-2.76l16.83-83.812a2.353 2.353 0 0 1 2.099-1.91z"
+          ></path>
+        </svg>
+
+        {!justIcon && (
+          <span className="dark:text-zinc-50 text-zinc-600 text-center text-sm">
+            Prisma
+          </span>
         )}
       </div>
     </div>
