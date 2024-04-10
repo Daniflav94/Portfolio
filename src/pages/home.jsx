@@ -4,11 +4,12 @@ import pontilhado from "../assets/image/pontilhado.png";
 import pontilhadoBranco from "../assets/image/pontilhado-branco.png";
 
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
 import { ButtonDarkMode } from "../components/buttonDarkMode";
 import { ContactsBottom } from "../components/contactsBottom";
 import { projects } from "../utils/mocks";
+import useDetectScroll from "@smakss/react-scroll-direction";
 
 export function Home() {
   const { darkMode } = useContext(DarkModeContext);
@@ -16,9 +17,9 @@ export function Home() {
   let height = window.screen.height;
 
   return (
-    <section
+    <div
       id="home"
-      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative ${height <= 770 ? "py-20 md:h-[105vh]" : "pt-8"}`}   
+      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative pt-10 md:pt-0`}   
     >
       <ContactsBottom />
 
@@ -27,7 +28,7 @@ export function Home() {
         className={`w-36 hidden md:flex md:absolute right-0 bottom-0 z-[99999]`}
         alt="quadrado pontilhado"
       />
-      <div className="inline-block mx-10 my-10 md:mx-0 md:my-10 md:flex md:justify-center md:items-center w-screen md:h-screen">
+      <div className="inline-block mx-10 my-10 md:mx-0 md:my-0 md:flex md:justify-center md:items-center w-screen md:h-screen">
         <div className="relative">
           <img
             src={imageProfile}
@@ -74,6 +75,6 @@ export function Home() {
           <img src={item.video} key={key} />
         ))}
       </div>
-    </section>
+    </div>
   );
 }
