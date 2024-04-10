@@ -18,7 +18,7 @@ export function Home() {
   return (
     <section
       id="home"
-      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative ${height <= 770 ? "py-20 md:h-[105vh]" : "pt-12"}`}   
+      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative ${height <= 770 ? "py-20 md:h-[105vh]" : "pt-8"}`}   
     >
       <ContactsBottom />
 
