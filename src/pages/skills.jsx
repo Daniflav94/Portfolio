@@ -120,7 +120,7 @@ export function Skills() {
                   {item.stack === "NodeIcon" && <NodeIcon />}
                   {item.stack === "NestIcon" && <NestIcon />}
                   {item.stack === "ExpressIcon" && <ExpressIcon />}
-                  {item.stack === "PrismaIcon" && <PrismaIconIcon />}
+                  {item.stack === "PrismaIcon" && <PrismaIcon />}
                   {item.stack === "JavaIcon" && <JavaIcon />}
                   {item.stack === "SpringIcon" && <SpringIcon />}
                   {item.stack === "MySQLIcon" && <MySQLIcon />}
