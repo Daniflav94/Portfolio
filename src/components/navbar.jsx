@@ -1,16 +1,26 @@
 import useDetectScroll from "@smakss/react-scroll-direction";
 import { Menu } from "lucide-react";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ButtonDarkMode } from "./buttonDarkMode";
 import { DarkModeContext } from "../context/darkModeContext";
 
 export function Navbar() {
   const { scrollPosition } = useDetectScroll();
   const [openMenu, setOpenMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
-  let widthScreen = window.screen.width;
+  const handleWindowSizeChange = () => {
+    setScreenWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange)
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange)
+    }
+  }, [])
 
   return (
     <header className="fixed h-12 md:h-16 top-0 w-screen z-[9999999] dark:bg-midnight bg-zinc-100 border-b-[1px] border-lilac">
@@ -35,11 +45,11 @@ export function Navbar() {
         >
           <li
             className={
-              scrollPosition.top < 600 && widthScreen >= 768
+              scrollPosition.top < 600 && screenWidth >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
                 : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
-            onClick={() => widthScreen < 768 && setOpenMenu(false)}
+            onClick={() => screenWidth < 768 && setOpenMenu(false)}
           >
             <a href="#home">
               <span className="text-lilac">#</span>início
@@ -49,11 +59,11 @@ export function Navbar() {
             className={
               scrollPosition.top > 600 &&
               scrollPosition.top <= 1300 &&
-              widthScreen >= 768
+              screenWidth >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
                 : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
-            onClick={() => widthScreen < 768 && setOpenMenu(false)}
+            onClick={() => screenWidth < 768 && setOpenMenu(false)}
           >
             <a href="#about">
               <span className="text-lilac">#</span>sobre
@@ -63,11 +73,11 @@ export function Navbar() {
             className={
               scrollPosition.top > 1300 &&
               scrollPosition.top <= 2100 &&
-              widthScreen >= 768
+              screenWidth >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
                 : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
-            onClick={() => widthScreen < 768 && setOpenMenu(false)}
+            onClick={() => screenWidth < 768 && setOpenMenu(false)}
           >
             <a href="#skills">
               <span className="text-lilac">#</span>habilidades
@@ -77,11 +87,11 @@ export function Navbar() {
             className={
               scrollPosition.top > 2100 &&
               scrollPosition.top <= 3000 &&
-              widthScreen >= 768
+              screenWidth >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
                 : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
-            onClick={() => widthScreen < 768 && setOpenMenu(false)}
+            onClick={() => screenWidth < 768 && setOpenMenu(false)}
           >
             <a href="#projects">
               <span className="text-lilac">#</span>projetos
@@ -89,11 +99,11 @@ export function Navbar() {
           </li>
           <li
             className={
-              scrollPosition.top > 3000 && widthScreen >= 768
+              scrollPosition.top > 3000 && screenWidth >= 768
                 ? "dark:text-zinc-50 text-lilacDark"
                 : "dark:text-zinc-400 text-zinc-500 dark:hover:text-zinc-50 hover:text-lilacDark transition ease-linear"
             }
-            onClick={() => widthScreen < 768 && setOpenMenu(false)}
+            onClick={() => screenWidth < 768 && setOpenMenu(false)}
           >
             <a href="#contact">
               <span className="text-lilac">#</span>contatos
