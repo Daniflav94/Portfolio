@@ -4,14 +4,26 @@ import toDoListGif from "../assets/midia/toDoListGif.gif";
 import appFilmesGif from "../assets/midia/appFilmesGif.gif";
 import bibliotech from "../assets/image/bibliotech.png";
 import bibliotechGif from "../assets/midia/bibliotechGif.gif";
-import livraria from "../assets/image/livraria.png";
-import livrariaGif from "../assets/midia/livraria.gif";
+import petMatch from "../assets/image/pet-match.png";
+import petMatchGif from "../assets/midia/pet-match.gif";
 import cloneCinema from "../assets/image/clone-cinema.png";
 import cloneCinemaGif from "../assets/midia/cloneCinema.gif";
 
 export const projects = [
   {
     id: 1,
+    image: petMatch,
+    title: "Pet-Match",
+    stacks: ["react", "node", "typescript", "express", "jest"],
+    github: "https://github.com/Daniflav94/Pet-Match_Fullstack",
+    deploy: "https://pet-match-10c87.web.app/",
+    description:
+      "Aplicação desenvolvida para facilitar a adoção de pets. Os usuários podem ver todos os pets disponíveis, utilizar filtros, favoritar pets e solicitar adoção. A ong cadastrada como admin consegue administrar os seus pets e recebe notificações pela aplicação e também via email quando um usuário solicitar adoção, podendo aceitar ou recusar. O usuário também é notificado por email e pela aplicação. Caso queira testar a aplicação, utilizar os acessos: como usuário - dani@email.com, senha: 123456; como admin - clube@email.com, senha: 123456",
+    video: petMatchGif,
+    date: "05/2024",
+  },
+  {
+    id: 2,
     image: appfilmes,
     title: "TMDB Filmes",
     stacks: ["angular", "firebase", "typescript"],
@@ -20,10 +32,10 @@ export const projects = [
     description:
       "Aplicação web de filmes personalizável que consome a API do The Movie Database, onde o usuário pode se cadastrar e fazer login, salvar filmes, avaliar, favoritar e fazer pesquisas. Caso queira testar a aplicação, utilize essas credenciais: email: teste2024@email.com, senha: 123456",
     video: appFilmesGif,
-    date: "02/2023"
+    date: "02/2023",
   },
   {
-    id: 2,
+    id: 3,
     image: toDoList,
     title: "Lista de Tarefas",
     stacks: ["angular", "java", "spring", "typescript"],
@@ -31,10 +43,10 @@ export const projects = [
     description:
       "Aplicação web de lista de tarefas completa que possui autenticação, listas principais já prontas e opção de criar novas listas, com possibilidade de personalizar a imagem de fundo de cada uma. As tarefas possuem opção de inserir data e repetição diária, semanal ou mensal, também é possível editar as informações inseridas, adicionar anotações e excluir uma tarefa.",
     video: toDoListGif,
-    date: "03/2023"
+    date: "03/2023",
   },
   {
-    id: 3,
+    id: 4,
     image: bibliotech,
     title: "Bibliotech",
     stacks: ["angular", "firebase", "typescript"],
@@ -43,18 +55,7 @@ export const projects = [
     description:
       "Esse projeto foi desenvolvido em equipe durante o bootcamp Java Fullstack, se trata de uma aplicação web para administração de biblioteca, onde é possível cadastrar livros e fazer empréstimos. O usuário/bibliotecário pode visualizar as informações de empréstimos de livros em tabela, editar o empréstimo ou alterar na tabela o status para devolvido.",
     video: bibliotechGif,
-    date: "11/2022"
-  },
-  {
-    id: 4,
-    image: livraria,
-    title: "Minha Livraria",
-    stacks: ["angular", "typescript"],
-    github: "https://github.com/Daniflav94/Livraria",
-    description:
-      "Página da web que possibilita adicionar informações de livros através de um formulário e exibi-los em formato de card, com capa, título, autor e uma nota pessoal. Foram utilizados as ferramentas do Angular: DataBinding, Diretivas e Comunicação entre componentes para fazer a interação entre os dados inseridos no formulário e a exibição dos cards e para adicionar a opção de excluir um card.",
-    video: livrariaGif,
-    date: "11/2022"
+    date: "11/2022",
   },
   {
     id: 5,
@@ -66,7 +67,7 @@ export const projects = [
     description:
       "Aplicação clone do site de cinema da minha cidade Cinearaújo, desenvolvido no início dos meus estudos para praticar HTML e CSS.",
     video: cloneCinemaGif,
-    date: "10/2022"
+    date: "10/2022",
   },
 ];
 
@@ -84,31 +85,31 @@ export const stacksFront = [
     delay: 0.2,
   },
   {
-    stack: "JSIcon",
+    stack: "StyledComponentsIcon",
     delay: 0.25,
   },
   {
-    stack: "TSIcon",
+    stack: "JSIcon",
     delay: 0.3,
   },
   {
-    stack: "ReactIcon",
+    stack: "TSIcon",
     delay: 0.35,
   },
   {
-    stack: "ReactNativeIcon",
+    stack: "ReactIcon",
     delay: 0.4,
   },
   {
-    stack: "ReduxIcon",
+    stack: "ReactNativeIcon",
     delay: 0.45,
   },
   {
-    stack: "JestIcon",
+    stack: "ReduxIcon",
     delay: 0.5,
   },
   {
-    stack: "GraphQLIcon",
+    stack: "JestIcon",
     delay: 0.55,
   },
   {
@@ -153,5 +154,9 @@ export const stacksBack = [
   {
     stack: "FirebaseIcon",
     delay: 1.05,
+  },
+  {
+    stack: "DockerIcon",
+    delay: 1.1,
   },
 ];

@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export function ModalProject({ project }) {
   return (
-      <Dialog.Content className="md:w-[82%] w-[94%] h-fit max-h-[90%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
-        <div className="md:grid md:grid-cols-3 flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
+      <Dialog.Content className="md:w-[50%] w-[94%] h-fit max-h-[95%] overflow-auto fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999999] dark:bg-midnight bg-zinc-100 rounded-2xl border-[1px] dark:border-zinc-700 border-zinc-300">
+        <div className=" flex flex-col gap-8 overflow-hidden box-border md:p-8 p-5 pt-12 ">
           <div className="w-full h-full col-span-2">
             <img src={project.video} loading="lazy" />
           </div>
 
-          <div className="flex flex-col md:gap-6 gap-4 justify-around">
+          <div className="flex flex-col md:gap-6 gap-4 justify-around w-full">
             <h2 className="dark:text-zinc-50 text-zinc-600 font-medium md:text-3xl text-2xl text-center md:text-left">
               {project.title}
             </h2>
@@ -28,16 +28,15 @@ export function ModalProject({ project }) {
                 </div>
               ))}
             </div>
-            <div className="flex md:justify-between justify-center gap-2">
+            <div className="flex w-full  justify-center gap-5">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="w-full"
               >
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.8 }}
-                  className="dark:text-midnight text-zinc-50 bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
+                  className="dark:text-midnight text-zinc-50 bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-96 overflow-hidden"
                 >
                   <span>Repositório</span>
                 </motion.button>
@@ -47,11 +46,10 @@ export function ModalProject({ project }) {
                   href={project.deploy}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full"
                 >
                   <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.8 }}
-                    className="text-lilac dark:bg-midnight bg-zinc-100 border-[1px] border-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-40 before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
+                    className="text-lilac dark:bg-midnight bg-zinc-100 border-[1px] border-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-96 overflow-hidden"
                   >
                     <span>Deploy</span>
                   </motion.button>

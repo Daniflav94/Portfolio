@@ -19,6 +19,8 @@ import {
   SpringIcon,
   ExpressIcon,
   PrismaIcon,
+  StyledComponentsIcon,
+  DockerIcon
 } from "../assets/image/stacks";
 import { motion, MotionConfig } from "framer-motion";
 import logo from "../assets/image/logo.svg";
@@ -87,13 +89,13 @@ export function Skills() {
                   {item.stack === "HTMLIcon" && <HTMLIcon />}
                   {item.stack === "CSSIcon" && <CSSIcon />}
                   {item.stack === "TailwindIcon" && <TailwindIcon />}
+                  {item.stack === "StyledComponentsIcon" && <StyledComponentsIcon />}
                   {item.stack === "JSIcon" && <JSIcon />}
                   {item.stack === "TSIcon" && <TSIcon />}
                   {item.stack === "ReactIcon" && <ReactIcon />}
                   {item.stack === "ReactNativeIcon" && <ReactNativeIcon />}
                   {item.stack === "ReduxIcon" && <ReduxIcon />}
                   {item.stack === "JestIcon" && <JestIcon />}
-                  {item.stack === "GraphQLIcon" && <GraphQLIcon />}
                   {item.stack === "AngularIcon" && <AngularIcon />}
                 </motion.div>
               ))}
@@ -126,6 +128,7 @@ export function Skills() {
                   {item.stack === "MySQLIcon" && <MySQLIcon />}
                   {item.stack === "PostgresIcon" && <PostgresIcon />}
                   {item.stack === "FirebaseIcon" && <FirebaseIcon />}
+                  {item.stack === "DockerIcon" && <DockerIcon />}
                 </motion.div>
               ))}
             </div>
