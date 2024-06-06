@@ -8,6 +8,8 @@ import petMatch from "../assets/image/pet-match.png";
 import petMatchGif from "../assets/midia/pet-match.gif";
 import cloneCinema from "../assets/image/clone-cinema.png";
 import cloneCinemaGif from "../assets/midia/cloneCinema.gif";
+import gestaoAtivos from "../assets/image/gestao-ativos.png";
+import gestaoAtivosGif from "../assets/midia/gestao-ativos.gif";
 
 export const projects = [
   {
@@ -24,6 +26,18 @@ export const projects = [
   },
   {
     id: 2,
+    image: gestaoAtivos,
+    title: "Gestão de ativos",
+    stacks: ["react", "node", "typescript", "express"],
+    github: "https://github.com/Daniflav94/Gestao-Ativos",
+    deploy: "https://gestao-ativos-smoky.vercel.app/",
+    description:
+      "Aplicação web desenvolvida para gerenciar ativos, no qual é possível cadastrar os ativos e colaboradores e fazer apontamentos como: trocar status do ativo para alocado e relacionar com um colaborador e também mudar status para manutenção ou desabilitado. Todos os apontamentos são salvos e os mais recentes são exibidos em uma tabela, na qual o usuário poderá realizar diversos filtros e gerar um relatório em pdf dos resultados. Para testar a aplicação utilize - login: prod1@email.com, senha: 123456",
+    video: gestaoAtivosGif,
+    date: "06/2024",
+  },
+  {
+    id: 3,
     image: appfilmes,
     title: "TMDB Filmes",
     stacks: ["angular", "firebase", "typescript"],
@@ -35,7 +49,7 @@ export const projects = [
     date: "02/2023",
   },
   {
-    id: 3,
+    id: 4,
     image: toDoList,
     title: "Lista de Tarefas",
     stacks: ["angular", "java", "spring", "typescript"],
@@ -46,7 +60,7 @@ export const projects = [
     date: "03/2023",
   },
   {
-    id: 4,
+    id: 5,
     image: bibliotech,
     title: "Bibliotech",
     stacks: ["angular", "firebase", "typescript"],
@@ -58,7 +72,7 @@ export const projects = [
     date: "11/2022",
   },
   {
-    id: 5,
+    id: 6,
     image: cloneCinema,
     title: "Clone Cinearaújo",
     stacks: ["html", "css", "javascript"],
