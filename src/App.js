@@ -14,20 +14,29 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-    }, [2000])
-  }, [])
+    const image = new Image();
+    image.src = imageProfile;
+    image.onload = () => {
+      const timeout = setTimeout(() => {
+        setIsLoading(false);
+      }, [2000]);
+
+      return () => clearTimeout(timeout);
+    };
+
+    image.onerror = () => {
+      setIsLoading(false);
+    };
+  }, []);
 
   return (
     <>
       {isLoading ? (
-          <img
-            src={loadingAnimation}
-            alt="loading"
-            className="fixed w-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          />
-         
+        <img
+          src={loadingAnimation}
+          alt="loading"
+          className="fixed w-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
       ) : (
         <div className={`${darkMode && "dark"} relative`}>
           <Navbar />
@@ -36,12 +45,7 @@ function App() {
           <Skills />
           <Projects />
           <Contact />
-          <img
-            src={imageProfile}
-            className="hidden"
-            alt="Profile"
-            loading="eager"
-          />
+          
         </div>
       )}
     </>
