@@ -27,6 +27,7 @@ export function Project({ item }) {
   return (
     <Dialog.Root>
       <>
+      <Dialog.Overlay className="inset-0 fixed z-[9999999] bg-black/55"/>
         <div
           key={item.id}
           className="max-w-96 max-h-60 overflow-hidden box-border rounded-[3px] relative md:border-b-2 border-lilac md:hover:scale-110 md:transition md:ease-linear"

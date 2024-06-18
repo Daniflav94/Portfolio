@@ -1,10 +1,10 @@
 import imageProfile from "../assets/image/picture-lilac.png";
-import curriculo from "../assets/files/Curriculo2.pdf";
+import curriculo from "../assets/files/Curriculo.pdf";
 import pontilhado from "../assets/image/pontilhado.png";
 import pontilhadoBranco from "../assets/image/pontilhado-branco.png";
 
 import { motion } from "framer-motion";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
 import { ButtonDarkMode } from "../components/buttonDarkMode";
 import { ContactsBottom } from "../components/contactsBottom";
@@ -13,11 +13,44 @@ import useDetectScroll from "@smakss/react-scroll-direction";
 
 export function Home() {
   const { darkMode } = useContext(DarkModeContext);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+  const texts = [
+    "Desenvolvedora Front-end",
+    "Desenvolvedora Back-end",
+    "Desenvolvedora Fullstack",
+  ];
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentText = texts[loopNum % texts.length];
+      setText(
+        isDeleting
+          ? currentText.substring(0, text.length - 1)
+          : currentText.substring(0, text.length + 1)
+      );
+
+      setTypingSpeed(isDeleting ? 40 : 60);
+
+      if (!isDeleting && text === currentText) {
+        setTimeout(() => setIsDeleting(true), 1000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
     <div
       id="home"
-      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative pt-10 md:pt-0`}   
+      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative pt-10 md:pt-0`}
     >
       <ContactsBottom />
 
@@ -46,26 +79,27 @@ export function Home() {
           </div>
         </div>
 
-        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 mt-16 md:mx-20 mx-5 md:ps-20 flex flex-col justify-center font-sans">
-          <p className="dark:text-gray text-zinc-600 text-xl mb-6">
+        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 my-16 md:mx-20 md:ps-20 flex flex-col justify-center items-center md:items-start font-sans">
+          <div className="dark:text-gray text-zinc-600 text-xl mb-6 h-[65px] w-[290px]">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
-            Desenvolvedora Fullstack
-          </p>
+            <span
+              id="typing-text"
+              className="h-[28px] overflow-hidden inline-block animate-blink"
+            >
+              {text}
+            </span>
+          </div>
+          
           <a
             href={curriculo}
             download="Currículo Daniele Almeida"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.8 }}
-              className=" bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md md:w-40 w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-40 overflow-hidden"
-            >
-              <span className="relative z-10 dark:text-midnight text-zinc-50">
-                Download CV
-              </span>
-            </motion.button>
+            <button className="relative overflow-hidden h-12 px-8 rounded-lg md:dark:bg-gray-800 md:bg-gray bg-lilac dark:text-midnight md:dark:text-zinc-100 text-white border-none cursor-pointer group">
+              <span className="relative z-10">Download CV</span>
+              <span className="absolute top-0 left-0 w-full h-full rounded-lg transform scale-x-0 origin-0-50 transition-transform duration-475 bg-gradient-to-r from-purple-500 to-lilac group-hover:scale-x-100"></span>
+            </button>
           </a>
         </div>
       </div>

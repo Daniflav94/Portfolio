@@ -20,7 +20,7 @@ export const projects = [
     github: "https://github.com/Daniflav94/Pet-Match_Fullstack",
     deploy: "https://pet-match-10c87.web.app/",
     description:
-      "Aplicação desenvolvida para facilitar a adoção de pets. Os usuários podem ver todos os pets disponíveis, utilizar filtros, favoritar pets e solicitar adoção. A ong cadastrada como admin consegue administrar os seus pets e recebe notificações pela aplicação e também via email quando um usuário solicitar adoção, podendo aceitar ou recusar. O usuário também é notificado por email e pela aplicação. Para testar a aplicação utilizar os acessos: como usuário - dani@email.com, senha: 123456; como admin - clube@email.com, senha: 123456",
+      "Aplicação desenvolvida para facilitar a adoção de pets. Os usuários podem ver todos os pets disponíveis, utilizar filtros, favoritar pets e solicitar adoção. A ong cadastrada como admin consegue administrar os seus pets e recebe notificações pela aplicação e também via email quando um usuário solicitar adoção, podendo aceitar ou recusar. O usuário também é notificado por email e pela aplicação. Para testar a aplicação utilize: como usuário - dani@email.com, senha: 123456; como admin - clube@email.com, senha: 123456",
     video: petMatchGif,
     date: "05/2024",
   },

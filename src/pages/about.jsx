@@ -57,9 +57,8 @@ export function About() {
             <br />
             &emsp;&emsp;Atuo na área de programação há mais de 2 anos e possuo
             experiência como Desenvolvedora Fullstack, com foco principal nas
-            áreas de desenvolvimento web e mobile. Utilizo atualmente a stack
-            JavaScript (Node, React & React Native) para desenvolver em ambas as
-            frentes.
+            áreas de desenvolvimento web e mobile. Utilizo atualmente as stacks
+            JavaScript (Node, React & React Native) e também Java com Angular.
             <br />
             &emsp;&emsp;Estou cursando o último semestre em Análise e
             Desenvolvimento de Sistemas e em janeiro de 2023 finalizei o

@@ -109,7 +109,7 @@ export function Skills() {
             <div className="flex gap-6 flex-wrap justify-evenly ">
               {stacksBack?.map((item, key) => (
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
+                  initial={{ opacity: 0, scale: 0.3 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{
                     duration: 0.5,
@@ -118,6 +118,7 @@ export function Skills() {
                   }}
                   className="w-16 hover:animate-wiggle"
                   key={key}
+                  
                 >
                   {item.stack === "NodeIcon" && <NodeIcon />}
                   {item.stack === "NestIcon" && <NestIcon />}

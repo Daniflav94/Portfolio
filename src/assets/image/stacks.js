@@ -4,7 +4,7 @@ import { DarkModeContext } from "../../context/darkModeContext";
 export const ReactIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap gap-2 w-14">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <g fill="#C778DD">
@@ -23,7 +23,7 @@ export const ReactIcon = ({ justIcon = false }) => {
 export const ReactNativeIcon = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center flex-wrap gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <g fill="#C778DD">
@@ -43,7 +43,7 @@ export const ReactNativeIcon = () => {
 export const ReduxIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -62,7 +62,7 @@ export const ReduxIcon = ({ justIcon = false }) => {
 export const JestIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -82,7 +82,7 @@ export const JestIcon = ({ justIcon = false }) => {
 export const HTMLIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -102,7 +102,7 @@ export const HTMLIcon = ({ justIcon = false }) => {
 export const CSSIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -122,7 +122,7 @@ export const CSSIcon = ({ justIcon = false }) => {
 export const TailwindIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap box-border w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -145,7 +145,7 @@ export const TailwindIcon = ({ justIcon = false }) => {
 export const GraphQLIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <g fill="#C778DD">
@@ -173,7 +173,7 @@ export const GraphQLIcon = ({ justIcon = false }) => {
 export const AngularIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -195,7 +195,7 @@ export const AngularIcon = ({ justIcon = false }) => {
 export const JSIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -217,7 +217,7 @@ export const JSIcon = ({ justIcon = false }) => {
 export const TSIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -239,7 +239,7 @@ export const TSIcon = ({ justIcon = false }) => {
 export const NodeIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -261,7 +261,7 @@ export const NodeIcon = ({ justIcon = false }) => {
 export const NestIcon = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"}  transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -281,7 +281,7 @@ export const NestIcon = () => {
 export const JavaIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"}  transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -303,7 +303,7 @@ export const JavaIcon = ({ justIcon = false }) => {
 export const SpringIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -325,7 +325,7 @@ export const SpringIcon = ({ justIcon = false }) => {
 export const MySQLIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"}  transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -347,7 +347,7 @@ export const MySQLIcon = ({ justIcon = false }) => {
 export const PostgresIcon = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -369,7 +369,7 @@ export const PostgresIcon = () => {
 export const FirebaseIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -391,7 +391,7 @@ export const FirebaseIcon = ({ justIcon = false }) => {
 export const ExpressIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -413,7 +413,7 @@ export const ExpressIcon = ({ justIcon = false }) => {
 export const PrismaIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg viewBox="0 0 128 128" width={30} height={30}>
           <path
@@ -435,7 +435,7 @@ export const PrismaIcon = ({ justIcon = false }) => {
 export const StyledComponentsIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg
           viewBox="0 0 24 24"
@@ -462,7 +462,7 @@ export const StyledComponentsIcon = ({ justIcon = false }) => {
 export const DockerIcon = ({ justIcon = false }) => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} transition ease-in-out hover:scale-125 duration-300 `}>
       <div className="flex flex-col justify-center items-center text-wrap w-14 gap-2">
         <svg width={30} height={30} viewBox="0 0 128 128">
           <path

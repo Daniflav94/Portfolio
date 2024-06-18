@@ -40,9 +40,9 @@ export function ModalProject({ project }) {
               rel="noopener noreferrer"
               className="w-full"
             >
-              <motion.button className="dark:text-midnight text-zinc-50 bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-96 overflow-hidden">
+              <button className="dark:text-midnight text-zinc-50 bg-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative hover:brightness-110">
                 <span>Repositório</span>
-              </motion.button>
+              </button>
             </a>
             {project.deploy && (
               <a
@@ -51,9 +51,9 @@ export function ModalProject({ project }) {
                 rel="noopener noreferrer"
                 className="w-full"
               >
-                <motion.button className="text-lilac dark:bg-midnight bg-zinc-100 border-[1px] border-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:before:-translate-x-96 overflow-hidden">
+                <button className="text-lilac dark:bg-midnight bg-zinc-100 border-[1px] border-lilac py-2 text-1xl font-sans font-medium leading-6 tracking-tighter rounded-md w-full before:ease relative hover:brightness-110">
                   <span>Deploy</span>
-                </motion.button>
+                </button>
               </a>
             )}
           </div>

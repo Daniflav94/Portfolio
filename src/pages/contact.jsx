@@ -41,6 +41,13 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col gap-3 w-auto justify-center items-center"
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, transition: {
+              duration: 0.3,
+              delay: 0.1,
+              ease: [0, 0.71, 0.8, 1.01]
+            } }}
+           
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
           >
@@ -60,6 +67,13 @@ export function Contact() {
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, transition: {
+              duration: 0.3,
+              delay: 0.2,
+              ease: [0, 0.71, 0.8, 1.01]
+            } }}
+           
           >
             <div className="rounded-full border-lilac border-[1px] p-5 w-20">
               <img src={github} alt="" className=" w-10" />
@@ -74,6 +88,13 @@ export function Contact() {
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, transition: {
+              duration: 0.3,
+              delay: 0.3,
+              ease: [0, 0.71, 0.8, 1.01]
+            } }}
+           
           >
             <div className="rounded-full border-lilac border-[1px] p-5 w-20">
               <img src={discord} alt="" className=" w-10" />
@@ -88,6 +109,13 @@ export function Contact() {
             className="flex flex-col gap-3 w-26 md:auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, transition: {
+              duration: 0.3,
+              delay: 0.4,
+              ease: [0, 0.71, 0.8, 1.01]
+            } }}
+          
             href=" https://wa.me/5511945567816"
             target="_blank"
             rel="noopener noreferrer"
@@ -105,6 +133,13 @@ export function Contact() {
             className="flex flex-col gap-3 md:auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1, transition: {
+              duration: 0.3,
+              delay: 0.5,
+              ease: [0, 0.71, 0.8, 1.01]
+            } }}
+            
             href="mailto:danyelly_mell@hotmail.com"
           >
             <div className="rounded-full border-lilac border-[1px] p-5 w-20">

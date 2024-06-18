@@ -34,7 +34,7 @@ export function Projects() {
           <div className="bg-lilac h-[2px] w-52 opacity-60 hidden md:flex"></div>
         </div>
 
-        <div className="md:w-10/12 w-11/12 md:h-fit flex flex-wrap md:gap-10 gap-3 justify-center items-center">
+        <div className="md:w-10/12 w-11/12 md:h-fit flex flex-wrap md:gap-10 gap-3 justify-center items-center ">
           {projects?.map((item) => (
             <Project item={item} key={item.id} />
           ))}

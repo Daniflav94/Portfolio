@@ -7,20 +7,25 @@ import { DarkModeContext } from "../context/darkModeContext";
 export function Navbar() {
   const { scrollPosition } = useDetectScroll();
   const [openMenu, setOpenMenu] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+
   const handleWindowSizeChange = () => {
-    setScreenWidth(window.innerWidth)
-  }
+    setScreenWidth(window.innerWidth);
+  };
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange)
+    window.addEventListener("resize", handleWindowSizeChange);
     return () => {
-      window.removeEventListener('resize', handleWindowSizeChange)
-    }
-  }, [])
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   return (
     <header className="fixed h-12 md:h-16 top-0 w-screen z-[9999999] dark:bg-midnight bg-zinc-100 border-b-[1px] border-lilac">
@@ -37,11 +42,13 @@ export function Navbar() {
         </div>
 
         <ul
-          className={
-            !openMenu
-              ? "md:flex md:static md:flex-row hidden items-center justify-center  md:gap-16 md:h-16 md:border-0  font-medium font-sans"
-              : "absolute flex top-12 left-10 items-center py-3 w-40 border-[1px] rounded-md dark:border-zinc-600 border-zinc-300 dark:bg-midnight bg-zinc-100 flex-col gap-3 font-medium font-sans"
-          }
+          className={`${
+            screenWidth >= 768
+              ? "md:flex md:static md:flex-row items-center justify-center md:gap-16 md:h-16 md:border-0 font-medium font-sans "
+              : !openMenu
+              ? "absolute -left-96 transition ease-out"
+              : " absolute flex top-12 left-0 text-lg items-center py-8 w-screen h-screen dark:bg-midnight/80 backdrop-blur-lg bg-zinc-100/80 flex-col gap-8 font-medium font-sans transition ease-linear"
+          }`}
         >
           <li
             className={
