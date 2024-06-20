@@ -63,17 +63,17 @@ export function Home() {
         <div className="relative">
           <img
             src={imageProfile}
-            className="md:w-[430px] w-[280px] ms-5 md:ms-0"
+            className="md:w-[430px] w-[280px] "
             alt="Profile"
             loading="eager"
           />
-          <div className="rounded-full md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute overflow-hidden md:top-28 top-20 left-7 bg-transparent z-[999] ">
-            <h1 className="absolute md:top-[45px] md:left-[240px] top-3 left-44 md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-midnight text-zinc-50 ">
+          <div className="rounded-full md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute overflow-hidden md:top-28 top-20 left-1 bg-transparent z-[999] ">
+            <h1 className="absolute md:top-[45px] md:left-[240px] top-3 left-40 md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-midnight text-zinc-50 ">
               Hello <br /> World!
             </h1>
           </div>
-          <div className=" rounded-full  md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute md:top-28 top-20 left-7 bg-transparent z-2 ">
-            <h1 className="absolute md:top-[45px] top-3 left-44 md:left-[240px] md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-zinc-50 text-midnight">
+          <div className=" rounded-full  md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute md:top-28 top-20 left-1 bg-transparent z-2 ">
+            <h1 className="absolute md:top-[45px] top-3 left-40 md:left-[240px] md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-zinc-50 text-midnight">
               Hello <br /> World!
             </h1>
           </div>
