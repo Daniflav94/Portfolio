@@ -59,7 +59,7 @@ export function Home() {
         className={`w-36 hidden md:flex md:absolute right-0 bottom-0 z-[99999]`}
         alt="quadrado pontilhado"
       />
-      <div className="flex flex-col items-center pt-10 md:pt-0 md:flex md:flex-row md:justify-center md:items-center w-screen md:h-screen">
+      <div className="flex flex-col items-center pt-10 md:pt-0 md:flex md:flex-row justify-center w-screen md:h-screen">
         <div className="relative">
           <img
             src={imageProfile}
