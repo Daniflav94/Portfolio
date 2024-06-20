@@ -30,25 +30,24 @@ function App() {
   }, []);
 
   return (
-    <>
-      {isLoading ? (
-        <img
-          src={loadingAnimation}
-          alt="loading"
-          className="fixed w-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        />
-      ) : (
-        <div className={`${darkMode && "dark"} relative`}>
-          <Navbar />
-          <Home />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          
-        </div>
-      )}
-    </>
+    <div className={`${darkMode && "dark"} relative`}>
+    {isLoading ? (
+      <img
+        src={loadingAnimation}
+        alt="loading"
+        className="fixed w-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity duration-500 ease-in-out"
+      />
+    ) : (
+      <div className="opacity-0 transition-opacity duration-500 ease-in-out">
+        <Navbar />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    )}
+  </div>
   );
 }
 

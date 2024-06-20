@@ -79,7 +79,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="md:border-s-2 md:w-auto w-72 h-32 border-gray md:mt-52 my-16 md:mx-20 md:ps-20 flex flex-col justify-center items-center md:items-start font-sans">
+        <div className="md:border-s-2 md:w-auto w-80 h-32 border-gray md:mt-52 my-16 md:mx-20 md:ps-20 flex flex-col justify-center items-center md:items-start font-sans">
           <div className="dark:text-gray text-zinc-600 text-xl mb-6 h-[65px] w-[290px]">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
             <span
