@@ -4,14 +4,15 @@ import pontilhadoLilas from "../assets/image/pontilhado-lilas.png";
 import { motion } from "framer-motion";
 import { useContext, useEffect, useRef, useState } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
-import { useInView } from "framer-motion"
-
+import { useInView } from "framer-motion";
 
 export function About() {
   const { darkMode } = useContext(DarkModeContext);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const ref = useRef(null)
-  const isInView = useInView(ref)
+  const handleWindowSizeChange = () => {
+    setScreenWidth(window.innerWidth);
+  };
 
   return (
     <section
@@ -32,13 +33,15 @@ export function About() {
         </svg>
       </div>
 
-      <div ref={ref} className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10">
-        <div
-         style={{
-          transform: isInView ? "none" : "translateX(-1000px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.35s"
-        }}
+      <div
+        className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10"
+      >
+        <motion.div
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{
+            delay: 0.2, duration: 1.2
+          }}
           className="dark:bg-midnight bg-zinc-100 md:rounded-2xl h-fit max-w-screen-lg p-12 relative"
         >
           <img
@@ -80,7 +83,7 @@ export function About() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

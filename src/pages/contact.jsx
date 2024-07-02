@@ -35,17 +35,17 @@ export function Contact() {
           <div className="bg-lilac h-[2px] w-52 opacity-60 md:flex hidden"></div>
         </div>
 
-        <div className="md:w-9/12 w-screen max-h-[650px] md:max-h-screen flex-wrap flex md:flex-row flex-col justify-between items-center gap-5 md:gap-8 pb-16 px-5">
+        <div className="md:w-9/12 w-screen max-h-[650px] md:max-h-screen flex-wrap flex md:flex-row justify-center md:justify-between items-center gap-8 pb-16 px-5">
           <motion.a
             href="https://www.linkedin.com/in/daniele-f-almeida/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col gap-3 w-auto justify-center items-center"
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1, transition: {
-              duration: 0.3,
+            initial={{ opacity: 0, translateY: -100, scale: 1 }}
+            whileInView={{ opacity: 1, translateY: 0, transition: {
+              duration: 0.25,
               delay: 0.1,
-              ease: [0, 0.71, 0.8, 1.01]
+              ease: ["linear"],
             } }}
            
             whileHover={{ scale: 1.1 }}
@@ -57,7 +57,7 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               Linkedin
             </span>
-            <span className="text-gray text-sm">@daniele-f-almeida</span>
+            <span className="dark:text-gray text-zinc-400 text-sm">@daniele-f-almeida</span>
           </motion.a>
 
           <motion.a
@@ -67,11 +67,11 @@ export function Contact() {
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1, transition: {
-              duration: 0.3,
-              delay: 0.2,
-              ease: [0, 0.71, 0.8, 1.01]
+            initial={{ opacity: 0, translateY: -100, scale: 1 }}
+            whileInView={{ opacity: 1, translateY: 0, transition: {
+              duration: 0.25,
+              delay: 0.25,
+              ease: ["linear"]
             } }}
            
           >
@@ -81,18 +81,18 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               Github
             </span>
-            <span className="text-gray text-sm">@Daniflav94</span>
+            <span className="dark:text-gray text-zinc-400 text-sm">@Daniflav94</span>
           </motion.a>
 
           <motion.div
             className="flex flex-col gap-3 w-auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1, transition: {
-              duration: 0.3,
-              delay: 0.3,
-              ease: [0, 0.71, 0.8, 1.01]
+            initial={{ opacity: 0, translateY: -100, scale: 1 }}
+            whileInView={{ opacity: 1, translateY: 0, transition: {
+              duration: 0.25,
+              delay: 0.45,
+              ease: ["linear"]
             } }}
            
           >
@@ -102,18 +102,18 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               Discord
             </span>
-            <span className="text-gray text-sm">.danielealmeida</span>
+            <span className="dark:text-gray text-zinc-400 text-sm">.danielealmeida</span>
           </motion.div>
 
           <motion.a
             className="flex flex-col gap-3 w-26 md:auto justify-center items-center"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1, transition: {
-              duration: 0.3,
-              delay: 0.4,
-              ease: [0, 0.71, 0.8, 1.01]
+            initial={{ opacity: 0, translateY: -100, scale: 1 }}
+            whileInView={{ opacity: 1, translateY: 0, transition: {
+              duration: 0.25,
+              delay: 0.65,
+              ease: ["linear"]
             } }}
           
             href=" https://wa.me/5511945567816"
@@ -126,18 +126,18 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               Telefone
             </span>
-            <span className="text-gray text-sm">(11) 94556-7816</span>
+            <span className="dark:text-gray text-zinc-400 text-sm">(11) 94556-7816</span>
           </motion.a>
 
           <motion.a
-            className="flex flex-col gap-3 md:auto justify-center items-center"
+            className="flex flex-col gap-3 md:auto justify-center items-center pt-5"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            initial={{ opacity: 0, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1, transition: {
-              duration: 0.3,
-              delay: 0.5,
-              ease: [0, 0.71, 0.8, 1.01]
+            initial={{ opacity: 0, scale: 1, translateY: -100 }}
+            whileInView={{ opacity: 1, translateY: 0, transition: {
+              duration: 0.25,
+              delay: 0.85,
+              ease: ["linear"]
             } }}
             
             href="mailto:danyelly_mell@hotmail.com"
@@ -148,7 +148,7 @@ export function Contact() {
             <span className="dark:text-zinc-50 text-zinc-500 font-semibold text-lg">
               E-mail
             </span>
-            <span className="text-gray text-sm w-[100px] md:w-auto">
+            <span className="dark:text-gray text-zinc-400 text-sm w-24 text-center ">
               danyelly_mell@hotmail.com
             </span>
           </motion.a>

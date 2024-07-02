@@ -4,12 +4,11 @@ import pontilhado from "../assets/image/pontilhado.png";
 import pontilhadoBranco from "../assets/image/pontilhado-branco.png";
 
 import { motion } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { DarkModeContext } from "../context/darkModeContext";
-import { ButtonDarkMode } from "../components/buttonDarkMode";
 import { ContactsBottom } from "../components/contactsBottom";
 import { projects } from "../utils/mocks";
-import useDetectScroll from "@smakss/react-scroll-direction";
+import { useInView } from "framer-motion";
 
 export function Home() {
   const { darkMode } = useContext(DarkModeContext);
@@ -22,6 +21,8 @@ export function Home() {
     "Desenvolvedora Back-end",
     "Desenvolvedora Fullstack",
   ];
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   useEffect(() => {
     const handleTyping = () => {
@@ -50,7 +51,7 @@ export function Home() {
   return (
     <div
       id="home"
-      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] relative pt-10 md:pt-0`}
+      className={`dark:bg-midnight bg-zinc-100 md:h-[95vh] h-screen relative pt-10 md:pt-0 flex items-center`}
     >
       <ContactsBottom />
 
@@ -59,27 +60,44 @@ export function Home() {
         className={`w-36 hidden md:flex md:absolute right-0 bottom-0 z-[99999]`}
         alt="quadrado pontilhado"
       />
-      <div className="flex flex-col items-center pt-10 md:pt-0 md:flex md:flex-row justify-center w-screen md:h-screen">
-        <div className="relative">
+      <div
+        ref={ref}
+        className="flex flex-col items-center pt-10 md:pt-0 md:flex md:flex-row justify-center w-screen md:h-screen"
+      >
+        <div
+          className="relative"
+          style={{
+            transform: isInView ? "none" : "translateX(-1000px) translateY(-300px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.35s",
+          }}
+        >
           <img
             src={imageProfile}
             className="md:w-[430px] w-[280px] "
             alt="Profile"
             loading="eager"
           />
-          <div className="rounded-full md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute overflow-hidden md:top-28 top-20 left-1 bg-transparent z-[999] ">
-            <h1 className="absolute md:top-[45px] md:left-[240px] top-3 left-40 md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-midnight text-zinc-50 ">
+          <div className="rounded-full md:w-[408px] md:h-[385px] w-[270px] h-[260px] absolute overflow-hidden md:top-28 top-20 left-1 bg-transparent z-[999] ">
+            <h1 className="absolute md:top-[45px] md:left-[262px] top-3 left-40 md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-midnight text-zinc-50 ">
               Hello <br /> World!
             </h1>
           </div>
-          <div className=" rounded-full  md:w-[385px] md:h-[385px] w-[270px] h-[260px] absolute md:top-28 top-20 left-1 bg-transparent z-2 ">
-            <h1 className="absolute md:top-[45px] top-3 left-40 md:left-[240px] md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-zinc-50 text-midnight">
+          <div className=" rounded-full  md:w-[408px] md:h-[385px] w-[270px] h-[260px] absolute md:top-28 top-20 left-1 bg-transparent z-2 ">
+            <h1 className="absolute md:top-[45px] top-3 left-40 md:left-[262px] md:text-6xl text-4xl font-code font-regular tracking-widest dark:text-zinc-50 text-midnight">
               Hello <br /> World!
             </h1>
           </div>
         </div>
 
-        <div className="md:border-s-2 md:w-auto w-80 h-32 border-gray md:mt-52 my-16 md:mx-20 md:ps-20 flex flex-col justify-center items-center md:items-start font-sans">
+        <div
+          style={{
+            transform: isInView ? "none" : "translateX(1000px) translateY(300px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.35s",
+          }}
+          className="md:border-s-2 md:w-auto w-80 h-32 border-gray md:mt-52 my-16 md:mx-28 md:ps-16 flex flex-col justify-center items-center md:items-start font-sans"
+        >
           <div className="dark:text-gray text-zinc-600 text-xl mb-6 h-[65px] w-[290px]">
             Eu sou <span className="text-lilac">Daniele Almeida</span>, <br />{" "}
             <span
@@ -89,7 +107,7 @@ export function Home() {
               {text}
             </span>
           </div>
-          
+
           <a
             href={curriculo}
             download="Currículo Daniele Almeida"
