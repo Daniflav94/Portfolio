@@ -15,11 +15,11 @@ export function Home() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(150);
+  const [typingSpeed, setTypingSpeed] = useState(200);
   const texts = [
-    "Desenvolvedora Front-end",
-    "Desenvolvedora Back-end",
-    "Desenvolvedora Fullstack",
+    "Fullstack",
+    "Back-end",
+    "Front-end",
   ];
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -104,7 +104,7 @@ export function Home() {
               id="typing-text"
               className="h-[28px] overflow-hidden inline-block animate-blink"
             >
-              {text}
+              Desenvolvedora {text}
             </span>
           </div>
 
