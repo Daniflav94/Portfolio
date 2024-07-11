@@ -37,8 +37,8 @@ export function About() {
         className="dark:md:bg-zinc-600 md:bg-zinc-200 w-screen md:h-[60vh] pt-5 flex justify-center items-center md:relative md:-top-10"
       >
         <motion.div
-          initial={{opacity: 0}}
-          whileInView={{opacity: 1}}
+          initial={{opacity: 0, translateY: 35}}
+          whileInView={{opacity: 1, translateY: 0}}
           transition={{
             delay: 0.2, duration: 1.2
           }}
